@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6067B90620576FE30066852D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6067B90520576FE30066852D /* CollectionViewCell.m */; };
+		6067B90B2057C0FA0066852D /* SpaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6067B90A2057C0FA0066852D /* SpaceItem.m */; };
+		6067B90E2057C2790066852D /* HorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6067B90D2057C2790066852D /* HorizontalView.m */; };
+		6067B9172059016E0066852D /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6067B8E7205664520066852D /* libMasonry.a */; };
+		6067B918205901B10066852D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6067B8DC205664520066852D /* Masonry.framework */; };
+		6067B919205901B10066852D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6067B8DE205664520066852D /* Masonry.framework */; };
 		97D33D8A204BAEAE00D27181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D33D89204BAEAE00D27181 /* AppDelegate.m */; };
 		97D33D93204BAEAF00D27181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D33D91204BAEAF00D27181 /* Main.storyboard */; };
 		97D33D95204BAEAF00D27181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D33D94204BAEAF00D27181 /* Assets.xcassets */; };
@@ -65,7 +71,426 @@
 		97F4D73A204FE8B8007B957B /* QRCodeBacgrouView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F4D733204FE8B7007B957B /* QRCodeBacgrouView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6067B8D1205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B79F205664510066852D /* Masonry iOS Examples.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD52F227179CAD57005CD195;
+			remoteInfo = "Masonry iOS Examples";
+		};
+		6067B8D5205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B8B5205664520066852D /* Masonry Tests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD7179FE18442A6400FAA7A8;
+			remoteInfo = MasonryTestsLoader;
+		};
+		6067B8D7205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B8B5205664520066852D /* Masonry Tests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD717A3218442ADC00FAA7A8;
+			remoteInfo = "Masonry iOS Tests";
+		};
+		6067B8DB205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B7C0205664510066852D /* Masonry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AED05B71AD59FD40053CC65;
+			remoteInfo = "Masonry iOS";
+		};
+		6067B8DD205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B7C0205664510066852D /* Masonry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AED06271AD5A1400053CC65;
+			remoteInfo = "Masonry OSX";
+		};
+		6067B8E4205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B88B205664520066852D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A7DB9040882B1058689C275628BAD96;
+			remoteInfo = Expecta;
+		};
+		6067B8E6205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B88B205664520066852D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2B6A8C9B5A40329ADEFB0567ED8489DC;
+			remoteInfo = Masonry;
+		};
+		6067B8E8205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B88B205664520066852D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4562385452B8EF12C3E0EFC2E07D12;
+			remoteInfo = "Pods-Masonry iOS Examples";
+		};
+		6067B8EA205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B88B205664520066852D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10A477660D2D97AEF58A6795020511A9;
+			remoteInfo = "Pods-Masonry iOS Tests";
+		};
+		6067B8EC205664520066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B88B205664520066852D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4EC8E6D70CF2CC9E094524A6560BC80;
+			remoteInfo = "Pods-MasonryTestsLoader";
+		};
+		6067B8F42056652D0066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B8EF2056652D0066852D /* Masonry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AED05B71AD59FD40053CC65;
+			remoteInfo = "Masonry iOS";
+		};
+		6067B8F62056652D0066852D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6067B8EF2056652D0066852D /* Masonry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AED06271AD5A1400053CC65;
+			remoteInfo = "Masonry OSX";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6067B769205664510066852D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6067B76A205664510066852D /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		6067B76B205664510066852D /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		6067B76D205664510066852D /* Masonry Constraint Make.codesnippet */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Masonry Constraint Make.codesnippet"; sourceTree = "<group>"; };
+		6067B76E205664510066852D /* Masonry Constraint Remake.codesnippet */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Masonry Constraint Remake.codesnippet"; sourceTree = "<group>"; };
+		6067B76F205664510066852D /* Masonry Constraint Update.codesnippet */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Masonry Constraint Update.codesnippet"; sourceTree = "<group>"; };
+		6067B773205664510066852D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6067B774205664510066852D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6067B775205664510066852D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6067B776205664510066852D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6067B777205664510066852D /* MASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASAppDelegate.h; sourceTree = "<group>"; };
+		6067B778205664510066852D /* MASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASAppDelegate.m; sourceTree = "<group>"; };
+		6067B779205664510066852D /* MASExampleAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleAnimatedView.h; sourceTree = "<group>"; };
+		6067B77A205664510066852D /* MASExampleAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleAnimatedView.m; sourceTree = "<group>"; };
+		6067B77B205664510066852D /* MASExampleArrayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleArrayView.h; sourceTree = "<group>"; };
+		6067B77C205664510066852D /* MASExampleArrayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleArrayView.m; sourceTree = "<group>"; };
+		6067B77D205664510066852D /* MASExampleAspectFitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleAspectFitView.h; sourceTree = "<group>"; };
+		6067B77E205664510066852D /* MASExampleAspectFitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleAspectFitView.m; sourceTree = "<group>"; };
+		6067B77F205664510066852D /* MASExampleAttributeChainingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleAttributeChainingView.h; sourceTree = "<group>"; };
+		6067B780205664510066852D /* MASExampleAttributeChainingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleAttributeChainingView.m; sourceTree = "<group>"; };
+		6067B781205664510066852D /* MASExampleBasicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleBasicView.h; sourceTree = "<group>"; };
+		6067B782205664510066852D /* MASExampleBasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleBasicView.m; sourceTree = "<group>"; };
+		6067B783205664510066852D /* MASExampleConstantsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleConstantsView.h; sourceTree = "<group>"; };
+		6067B784205664510066852D /* MASExampleConstantsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleConstantsView.m; sourceTree = "<group>"; };
+		6067B785205664510066852D /* MASExampleDebuggingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleDebuggingView.h; sourceTree = "<group>"; };
+		6067B786205664510066852D /* MASExampleDebuggingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleDebuggingView.m; sourceTree = "<group>"; };
+		6067B787205664510066852D /* MASExampleDistributeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleDistributeView.h; sourceTree = "<group>"; };
+		6067B788205664510066852D /* MASExampleDistributeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleDistributeView.m; sourceTree = "<group>"; };
+		6067B789205664510066852D /* MASExampleLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleLabelView.h; sourceTree = "<group>"; };
+		6067B78A205664510066852D /* MASExampleLabelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleLabelView.m; sourceTree = "<group>"; };
+		6067B78B205664510066852D /* MASExampleLayoutGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleLayoutGuideViewController.h; sourceTree = "<group>"; };
+		6067B78C205664510066852D /* MASExampleLayoutGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleLayoutGuideViewController.m; sourceTree = "<group>"; };
+		6067B78D205664510066852D /* MASExampleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleListViewController.h; sourceTree = "<group>"; };
+		6067B78E205664510066852D /* MASExampleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleListViewController.m; sourceTree = "<group>"; };
+		6067B78F205664510066852D /* MASExampleMarginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleMarginView.h; sourceTree = "<group>"; };
+		6067B790205664510066852D /* MASExampleMarginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleMarginView.m; sourceTree = "<group>"; };
+		6067B791205664510066852D /* MASExampleRemakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleRemakeView.h; sourceTree = "<group>"; };
+		6067B792205664510066852D /* MASExampleRemakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleRemakeView.m; sourceTree = "<group>"; };
+		6067B793205664510066852D /* MASExampleSafeAreaLayoutGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleSafeAreaLayoutGuideViewController.h; sourceTree = "<group>"; };
+		6067B794205664510066852D /* MASExampleSafeAreaLayoutGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleSafeAreaLayoutGuideViewController.m; sourceTree = "<group>"; };
+		6067B795205664510066852D /* MASExampleScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleScrollView.h; sourceTree = "<group>"; };
+		6067B796205664510066852D /* MASExampleScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleScrollView.m; sourceTree = "<group>"; };
+		6067B797205664510066852D /* MASExampleSidesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleSidesView.h; sourceTree = "<group>"; };
+		6067B798205664510066852D /* MASExampleSidesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleSidesView.m; sourceTree = "<group>"; };
+		6067B799205664510066852D /* MASExampleUpdateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleUpdateView.h; sourceTree = "<group>"; };
+		6067B79A205664510066852D /* MASExampleUpdateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleUpdateView.m; sourceTree = "<group>"; };
+		6067B79B205664510066852D /* MASExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASExampleViewController.h; sourceTree = "<group>"; };
+		6067B79C205664510066852D /* MASExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASExampleViewController.m; sourceTree = "<group>"; };
+		6067B79D205664510066852D /* Masonry iOS Examples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Masonry iOS Examples-Info.plist"; sourceTree = "<group>"; };
+		6067B79E205664510066852D /* Masonry iOS Examples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Masonry iOS Examples-Prefix.pch"; sourceTree = "<group>"; };
+		6067B79F205664510066852D /* Masonry iOS Examples.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Masonry iOS Examples.xcodeproj"; sourceTree = "<group>"; };
+		6067B7A2205664510066852D /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
+		6067B7A3205664510066852D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6067B7A5205664510066852D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6067B7A6205664510066852D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		6067B7A7205664510066852D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		6067B7A8205664510066852D /* MASConstraint+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		6067B7A9205664510066852D /* MASConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		6067B7AA205664510066852D /* MASConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		6067B7AB205664510066852D /* MASConstraintMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		6067B7AC205664510066852D /* MASConstraintMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		6067B7AD205664510066852D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		6067B7AE205664510066852D /* MASLayoutConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		6067B7AF205664510066852D /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		6067B7B0205664510066852D /* MASUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		6067B7B1205664510066852D /* MASViewAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		6067B7B2205664510066852D /* MASViewAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		6067B7B3205664510066852D /* MASViewConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		6067B7B4205664510066852D /* MASViewConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		6067B7B5205664510066852D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B7B6205664510066852D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		6067B7B7205664510066852D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6067B7B8205664510066852D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		6067B7B9205664510066852D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		6067B7BA205664510066852D /* View+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B7BB205664510066852D /* View+MASAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		6067B7BC205664510066852D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6067B7BD205664510066852D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B7BE205664510066852D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		6067B7BF205664510066852D /* Masonry.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Masonry.podspec; sourceTree = "<group>"; };
+		6067B7C0205664510066852D /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Masonry.xcodeproj; sourceTree = "<group>"; };
+		6067B7C3205664520066852D /* Masonry.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Masonry.xcworkspace; sourceTree = "<group>"; };
+		6067B7C4205664520066852D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		6067B7C5205664520066852D /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		6067B7C9205664520066852D /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		6067B7CA205664520066852D /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		6067B7CB205664520066852D /* EXPDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPDefines.h; sourceTree = "<group>"; };
+		6067B7CC205664520066852D /* EXPDoubleTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPDoubleTuple.h; sourceTree = "<group>"; };
+		6067B7CD205664520066852D /* EXPDoubleTuple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPDoubleTuple.m; sourceTree = "<group>"; };
+		6067B7CE205664520066852D /* Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expecta.h; sourceTree = "<group>"; };
+		6067B7CF205664520066852D /* ExpectaObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectaObject.h; sourceTree = "<group>"; };
+		6067B7D0205664520066852D /* ExpectaObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpectaObject.m; sourceTree = "<group>"; };
+		6067B7D1205664520066852D /* ExpectaSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectaSupport.h; sourceTree = "<group>"; };
+		6067B7D2205664520066852D /* ExpectaSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpectaSupport.m; sourceTree = "<group>"; };
+		6067B7D3205664520066852D /* EXPExpect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPExpect.h; sourceTree = "<group>"; };
+		6067B7D4205664520066852D /* EXPExpect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPExpect.m; sourceTree = "<group>"; };
+		6067B7D5205664520066852D /* EXPFloatTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPFloatTuple.h; sourceTree = "<group>"; };
+		6067B7D6205664520066852D /* EXPFloatTuple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPFloatTuple.m; sourceTree = "<group>"; };
+		6067B7D7205664520066852D /* EXPMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatcher.h; sourceTree = "<group>"; };
+		6067B7D8205664520066852D /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		6067B7D9205664520066852D /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		6067B7DB205664520066852D /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		6067B7DC205664520066852D /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		6067B7DD205664520066852D /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		6067B7DE205664520066852D /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		6067B7DF205664520066852D /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		6067B7E0205664520066852D /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		6067B7E1205664520066852D /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		6067B7E2205664520066852D /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		6067B7E3205664520066852D /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		6067B7E4205664520066852D /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		6067B7E5205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		6067B7E6205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		6067B7E7205664520066852D /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		6067B7E8205664520066852D /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		6067B7E9205664520066852D /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		6067B7EA205664520066852D /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		6067B7EB205664520066852D /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		6067B7EC205664520066852D /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		6067B7ED205664520066852D /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		6067B7EE205664520066852D /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		6067B7EF205664520066852D /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		6067B7F0205664520066852D /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		6067B7F1205664520066852D /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		6067B7F2205664520066852D /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		6067B7F3205664520066852D /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		6067B7F4205664520066852D /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		6067B7F5205664520066852D /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		6067B7F6205664520066852D /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		6067B7F7205664520066852D /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		6067B7F8205664520066852D /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		6067B7F9205664520066852D /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		6067B7FA205664520066852D /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		6067B7FB205664520066852D /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		6067B7FC205664520066852D /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		6067B7FD205664520066852D /* EXPMatchers+contain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		6067B7FE205664520066852D /* EXPMatchers+contain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		6067B7FF205664520066852D /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		6067B800205664520066852D /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		6067B801205664520066852D /* EXPMatchers+equal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		6067B802205664520066852D /* EXPMatchers+equal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		6067B803205664520066852D /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		6067B804205664520066852D /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		6067B805205664520066852D /* EXPMatchers+match.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+match.h"; sourceTree = "<group>"; };
+		6067B806205664520066852D /* EXPMatchers+match.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+match.m"; sourceTree = "<group>"; };
+		6067B807205664520066852D /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		6067B808205664520066852D /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		6067B809205664520066852D /* EXPMatchers+raise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		6067B80A205664520066852D /* EXPMatchers+raise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		6067B80B205664520066852D /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		6067B80C205664520066852D /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		6067B80D205664520066852D /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		6067B80E205664520066852D /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		6067B80F205664520066852D /* EXPMatchers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatchers.h; sourceTree = "<group>"; };
+		6067B810205664520066852D /* NSObject+Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expecta.h"; sourceTree = "<group>"; };
+		6067B811205664520066852D /* NSValue+Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSValue+Expecta.h"; sourceTree = "<group>"; };
+		6067B812205664520066852D /* NSValue+Expecta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSValue+Expecta.m"; sourceTree = "<group>"; };
+		6067B813205664520066852D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6067B814205664520066852D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6067B818205664520066852D /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		6067B819205664520066852D /* EXPDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPDefines.h; sourceTree = "<group>"; };
+		6067B81A205664520066852D /* EXPDoubleTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPDoubleTuple.h; sourceTree = "<group>"; };
+		6067B81B205664520066852D /* Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expecta.h; sourceTree = "<group>"; };
+		6067B81C205664520066852D /* ExpectaObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectaObject.h; sourceTree = "<group>"; };
+		6067B81D205664520066852D /* ExpectaSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectaSupport.h; sourceTree = "<group>"; };
+		6067B81E205664520066852D /* EXPExpect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPExpect.h; sourceTree = "<group>"; };
+		6067B81F205664520066852D /* EXPFloatTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPFloatTuple.h; sourceTree = "<group>"; };
+		6067B820205664520066852D /* EXPMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatcher.h; sourceTree = "<group>"; };
+		6067B821205664520066852D /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		6067B822205664520066852D /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		6067B823205664520066852D /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		6067B824205664520066852D /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		6067B825205664520066852D /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		6067B826205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		6067B827205664520066852D /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		6067B828205664520066852D /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		6067B829205664520066852D /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		6067B82A205664520066852D /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		6067B82B205664520066852D /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		6067B82C205664520066852D /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		6067B82D205664520066852D /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		6067B82E205664520066852D /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		6067B82F205664520066852D /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		6067B830205664520066852D /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		6067B831205664520066852D /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		6067B832205664520066852D /* EXPMatchers+contain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		6067B833205664520066852D /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		6067B834205664520066852D /* EXPMatchers+equal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		6067B835205664520066852D /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		6067B836205664520066852D /* EXPMatchers+match.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+match.h"; sourceTree = "<group>"; };
+		6067B837205664520066852D /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		6067B838205664520066852D /* EXPMatchers+raise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		6067B839205664520066852D /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		6067B83A205664520066852D /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		6067B83B205664520066852D /* EXPMatchers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatchers.h; sourceTree = "<group>"; };
+		6067B83C205664520066852D /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		6067B83D205664520066852D /* NSObject+Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expecta.h"; sourceTree = "<group>"; };
+		6067B83E205664520066852D /* NSValue+Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSValue+Expecta.h"; sourceTree = "<group>"; };
+		6067B840205664520066852D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		6067B841205664520066852D /* MASConstraint+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		6067B842205664520066852D /* MASConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		6067B843205664520066852D /* MASConstraintMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		6067B844205664520066852D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		6067B845205664520066852D /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		6067B846205664520066852D /* MASUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		6067B847205664520066852D /* MASViewAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		6067B848205664520066852D /* MASViewConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		6067B849205664520066852D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B84A205664520066852D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6067B84B205664520066852D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		6067B84C205664520066852D /* View+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B84D205664520066852D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6067B84E205664520066852D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B851205664520066852D /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		6067B852205664520066852D /* EXPDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPDefines.h; sourceTree = "<group>"; };
+		6067B853205664520066852D /* EXPDoubleTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPDoubleTuple.h; sourceTree = "<group>"; };
+		6067B854205664520066852D /* Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expecta.h; sourceTree = "<group>"; };
+		6067B855205664520066852D /* ExpectaObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectaObject.h; sourceTree = "<group>"; };
+		6067B856205664520066852D /* ExpectaSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpectaSupport.h; sourceTree = "<group>"; };
+		6067B857205664520066852D /* EXPExpect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPExpect.h; sourceTree = "<group>"; };
+		6067B858205664520066852D /* EXPFloatTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPFloatTuple.h; sourceTree = "<group>"; };
+		6067B859205664520066852D /* EXPMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatcher.h; sourceTree = "<group>"; };
+		6067B85A205664520066852D /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		6067B85B205664520066852D /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		6067B85C205664520066852D /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		6067B85D205664520066852D /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		6067B85E205664520066852D /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		6067B85F205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		6067B860205664520066852D /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		6067B861205664520066852D /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		6067B862205664520066852D /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		6067B863205664520066852D /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		6067B864205664520066852D /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		6067B865205664520066852D /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		6067B866205664520066852D /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		6067B867205664520066852D /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		6067B868205664520066852D /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		6067B869205664520066852D /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		6067B86A205664520066852D /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		6067B86B205664520066852D /* EXPMatchers+contain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		6067B86C205664520066852D /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		6067B86D205664520066852D /* EXPMatchers+equal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		6067B86E205664520066852D /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		6067B86F205664520066852D /* EXPMatchers+match.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+match.h"; sourceTree = "<group>"; };
+		6067B870205664520066852D /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		6067B871205664520066852D /* EXPMatchers+raise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		6067B872205664520066852D /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		6067B873205664520066852D /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		6067B874205664520066852D /* EXPMatchers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPMatchers.h; sourceTree = "<group>"; };
+		6067B875205664520066852D /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		6067B876205664520066852D /* NSObject+Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expecta.h"; sourceTree = "<group>"; };
+		6067B877205664520066852D /* NSValue+Expecta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSValue+Expecta.h"; sourceTree = "<group>"; };
+		6067B879205664520066852D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		6067B87A205664520066852D /* MASConstraint+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		6067B87B205664520066852D /* MASConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		6067B87C205664520066852D /* MASConstraintMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		6067B87D205664520066852D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		6067B87E205664520066852D /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		6067B87F205664520066852D /* MASUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		6067B880205664520066852D /* MASViewAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		6067B881205664520066852D /* MASViewConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		6067B882205664520066852D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B883205664520066852D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6067B884205664520066852D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		6067B885205664520066852D /* View+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B886205664520066852D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6067B887205664520066852D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		6067B889205664520066852D /* Masonry.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Masonry.podspec.json; sourceTree = "<group>"; };
+		6067B88A205664520066852D /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		6067B88B205664520066852D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		6067B890205664520066852D /* Expecta-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Expecta-dummy.m"; sourceTree = "<group>"; };
+		6067B891205664520066852D /* Expecta-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Expecta-prefix.pch"; sourceTree = "<group>"; };
+		6067B892205664520066852D /* Expecta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Expecta.xcconfig; sourceTree = "<group>"; };
+		6067B894205664520066852D /* Masonry-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		6067B895205664520066852D /* Masonry-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		6067B896205664520066852D /* Masonry.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		6067B898205664520066852D /* Pods-Masonry iOS Examples-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-Masonry iOS Examples-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6067B899205664520066852D /* Pods-Masonry iOS Examples-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-Masonry iOS Examples-acknowledgements.plist"; sourceTree = "<group>"; };
+		6067B89A205664520066852D /* Pods-Masonry iOS Examples-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-Masonry iOS Examples-dummy.m"; sourceTree = "<group>"; };
+		6067B89B205664520066852D /* Pods-Masonry iOS Examples-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-Masonry iOS Examples-frameworks.sh"; sourceTree = "<group>"; };
+		6067B89C205664520066852D /* Pods-Masonry iOS Examples-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-Masonry iOS Examples-resources.sh"; sourceTree = "<group>"; };
+		6067B89D205664520066852D /* Pods-Masonry iOS Examples.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Masonry iOS Examples.debug.xcconfig"; sourceTree = "<group>"; };
+		6067B89E205664520066852D /* Pods-Masonry iOS Examples.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Masonry iOS Examples.release.xcconfig"; sourceTree = "<group>"; };
+		6067B8A0205664520066852D /* Pods-Masonry iOS Tests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-Masonry iOS Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6067B8A1205664520066852D /* Pods-Masonry iOS Tests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-Masonry iOS Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6067B8A2205664520066852D /* Pods-Masonry iOS Tests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-Masonry iOS Tests-dummy.m"; sourceTree = "<group>"; };
+		6067B8A3205664520066852D /* Pods-Masonry iOS Tests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-Masonry iOS Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6067B8A4205664520066852D /* Pods-Masonry iOS Tests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-Masonry iOS Tests-resources.sh"; sourceTree = "<group>"; };
+		6067B8A5205664520066852D /* Pods-Masonry iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Masonry iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6067B8A6205664520066852D /* Pods-Masonry iOS Tests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Masonry iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6067B8A8205664520066852D /* Pods-MasonryTestsLoader-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-MasonryTestsLoader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6067B8A9205664520066852D /* Pods-MasonryTestsLoader-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-MasonryTestsLoader-acknowledgements.plist"; sourceTree = "<group>"; };
+		6067B8AA205664520066852D /* Pods-MasonryTestsLoader-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-MasonryTestsLoader-dummy.m"; sourceTree = "<group>"; };
+		6067B8AB205664520066852D /* Pods-MasonryTestsLoader-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-MasonryTestsLoader-frameworks.sh"; sourceTree = "<group>"; };
+		6067B8AC205664520066852D /* Pods-MasonryTestsLoader-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-MasonryTestsLoader-resources.sh"; sourceTree = "<group>"; };
+		6067B8AD205664520066852D /* Pods-MasonryTestsLoader.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-MasonryTestsLoader.debug.xcconfig"; sourceTree = "<group>"; };
+		6067B8AE205664520066852D /* Pods-MasonryTestsLoader.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-MasonryTestsLoader.release.xcconfig"; sourceTree = "<group>"; };
+		6067B8AF205664520066852D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6067B8B1205664520066852D /* coveralls.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = coveralls.sh; sourceTree = "<group>"; };
+		6067B8B2205664520066852D /* exportenv.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = exportenv.sh; sourceTree = "<group>"; };
+		6067B8B4205664520066852D /* GcovTestObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GcovTestObserver.m; sourceTree = "<group>"; };
+		6067B8B5205664520066852D /* Masonry Tests.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Masonry Tests.xcodeproj"; sourceTree = "<group>"; };
+		6067B8B8205664520066852D /* MasonryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MasonryTests-Info.plist"; sourceTree = "<group>"; };
+		6067B8B9205664520066852D /* MasonryTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasonryTests-Prefix.pch"; sourceTree = "<group>"; };
+		6067B8BB205664520066852D /* CASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CASAppDelegate.h; sourceTree = "<group>"; };
+		6067B8BC205664520066852D /* CASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CASAppDelegate.m; sourceTree = "<group>"; };
+		6067B8BE205664520066852D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6067B8BF205664520066852D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6067B8C0205664520066852D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6067B8C1205664520066852D /* MasonryTestsLoader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MasonryTestsLoader-Info.plist"; sourceTree = "<group>"; };
+		6067B8C2205664520066852D /* MasonryTestsLoader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasonryTestsLoader-Prefix.pch"; sourceTree = "<group>"; };
+		6067B8C3205664520066852D /* NSObject+MASSubscriptSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MASSubscriptSupport.h"; sourceTree = "<group>"; };
+		6067B8C5205664520066852D /* MASCompositeConstraintSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraintSpec.m; sourceTree = "<group>"; };
+		6067B8C6205664520066852D /* MASConstraintDelegateMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MASConstraintDelegateMock.h; sourceTree = "<group>"; };
+		6067B8C7205664520066852D /* MASConstraintDelegateMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASConstraintDelegateMock.m; sourceTree = "<group>"; };
+		6067B8C8205664520066852D /* MASConstraintMakerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMakerSpec.m; sourceTree = "<group>"; };
+		6067B8C9205664520066852D /* MASViewAttributeSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASViewAttributeSpec.m; sourceTree = "<group>"; };
+		6067B8CA205664520066852D /* MASViewConstraintSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraintSpec.m; sourceTree = "<group>"; };
+		6067B8CB205664520066852D /* NSArray+MASAdditionsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditionsSpec.m"; sourceTree = "<group>"; };
+		6067B8CC205664520066852D /* NSLayoutConstraint+MASDebugAdditionsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditionsSpec.m"; sourceTree = "<group>"; };
+		6067B8CD205664520066852D /* View+MASAdditionsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditionsSpec.m"; sourceTree = "<group>"; };
+		6067B8CE205664520066852D /* ViewController+MASAdditionsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditionsSpec.m"; sourceTree = "<group>"; };
+		6067B8CF205664520066852D /* XCTest+Spec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCTest+Spec.h"; sourceTree = "<group>"; };
+		6067B8EF2056652D0066852D /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry.xcodeproj; path = Masonry/Masonry.xcodeproj; sourceTree = "<group>"; };
+		6067B90420576FE30066852D /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		6067B90520576FE30066852D /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		6067B9092057C0FA0066852D /* SpaceItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceItem.h; sourceTree = "<group>"; };
+		6067B90A2057C0FA0066852D /* SpaceItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceItem.m; sourceTree = "<group>"; };
+		6067B90C2057C2790066852D /* HorizontalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalView.h; sourceTree = "<group>"; };
+		6067B90D2057C2790066852D /* HorizontalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalView.m; sourceTree = "<group>"; };
+		6067B9132058FF730066852D /* Masonry.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Masonry.podspec; path = Masonry/Masonry.podspec; sourceTree = "<group>"; };
+		6067B9152058FFC90066852D /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry/Masonry.h; sourceTree = "<group>"; };
 		97D33D85204BAEAE00D27181 /* Netsuite Mobile Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netsuite Mobile Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D33D88204BAEAE00D27181 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97D33D89204BAEAE00D27181 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -158,6 +583,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6067B918205901B10066852D /* Masonry.framework in Frameworks */,
+				6067B919205901B10066852D /* Masonry.framework in Frameworks */,
+				6067B9172059016E0066852D /* libMasonry.a in Frameworks */,
 				97D33DE1204C3CCC00D27181 /* JavaScriptCore.framework in Frameworks */,
 				97D33DBF204BF77000D27181 /* libicucore.tbd in Frameworks */,
 				97D33DBD204BF76200D27181 /* libc++.tbd in Frameworks */,
@@ -180,6 +608,613 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6067B768205664510066852D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				6067B769205664510066852D /* .gitignore */,
+				6067B76A205664510066852D /* .travis.yml */,
+				6067B76B205664510066852D /* CHANGELOG.md */,
+				6067B76C205664510066852D /* CodeSnippets */,
+				6067B770205664510066852D /* Examples */,
+				6067B7A2205664510066852D /* ISSUE_TEMPLATE.md */,
+				6067B7A3205664510066852D /* LICENSE */,
+				6067B7A4205664510066852D /* Masonry */,
+				6067B7BF205664510066852D /* Masonry.podspec */,
+				6067B7C0205664510066852D /* Masonry.xcodeproj */,
+				6067B7C3205664520066852D /* Masonry.xcworkspace */,
+				6067B7C4205664520066852D /* Podfile */,
+				6067B7C5205664520066852D /* Podfile.lock */,
+				6067B7C6205664520066852D /* Pods */,
+				6067B8AF205664520066852D /* README.md */,
+				6067B8B0205664520066852D /* script */,
+				6067B8B3205664520066852D /* Tests */,
+			);
+			name = Masonry;
+			path = ../../Masonry;
+			sourceTree = "<group>";
+		};
+		6067B76C205664510066852D /* CodeSnippets */ = {
+			isa = PBXGroup;
+			children = (
+				6067B76D205664510066852D /* Masonry Constraint Make.codesnippet */,
+				6067B76E205664510066852D /* Masonry Constraint Remake.codesnippet */,
+				6067B76F205664510066852D /* Masonry Constraint Update.codesnippet */,
+			);
+			path = CodeSnippets;
+			sourceTree = "<group>";
+		};
+		6067B770205664510066852D /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				6067B771205664510066852D /* Masonry iOS Examples */,
+				6067B79F205664510066852D /* Masonry iOS Examples.xcodeproj */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		6067B771205664510066852D /* Masonry iOS Examples */ = {
+			isa = PBXGroup;
+			children = (
+				6067B772205664510066852D /* InfoPlist.strings */,
+				6067B774205664510066852D /* Images.xcassets */,
+				6067B775205664510066852D /* Launch Screen.storyboard */,
+				6067B776205664510066852D /* main.m */,
+				6067B777205664510066852D /* MASAppDelegate.h */,
+				6067B778205664510066852D /* MASAppDelegate.m */,
+				6067B779205664510066852D /* MASExampleAnimatedView.h */,
+				6067B77A205664510066852D /* MASExampleAnimatedView.m */,
+				6067B77B205664510066852D /* MASExampleArrayView.h */,
+				6067B77C205664510066852D /* MASExampleArrayView.m */,
+				6067B77D205664510066852D /* MASExampleAspectFitView.h */,
+				6067B77E205664510066852D /* MASExampleAspectFitView.m */,
+				6067B77F205664510066852D /* MASExampleAttributeChainingView.h */,
+				6067B780205664510066852D /* MASExampleAttributeChainingView.m */,
+				6067B781205664510066852D /* MASExampleBasicView.h */,
+				6067B782205664510066852D /* MASExampleBasicView.m */,
+				6067B783205664510066852D /* MASExampleConstantsView.h */,
+				6067B784205664510066852D /* MASExampleConstantsView.m */,
+				6067B785205664510066852D /* MASExampleDebuggingView.h */,
+				6067B786205664510066852D /* MASExampleDebuggingView.m */,
+				6067B787205664510066852D /* MASExampleDistributeView.h */,
+				6067B788205664510066852D /* MASExampleDistributeView.m */,
+				6067B789205664510066852D /* MASExampleLabelView.h */,
+				6067B78A205664510066852D /* MASExampleLabelView.m */,
+				6067B78B205664510066852D /* MASExampleLayoutGuideViewController.h */,
+				6067B78C205664510066852D /* MASExampleLayoutGuideViewController.m */,
+				6067B78D205664510066852D /* MASExampleListViewController.h */,
+				6067B78E205664510066852D /* MASExampleListViewController.m */,
+				6067B78F205664510066852D /* MASExampleMarginView.h */,
+				6067B790205664510066852D /* MASExampleMarginView.m */,
+				6067B791205664510066852D /* MASExampleRemakeView.h */,
+				6067B792205664510066852D /* MASExampleRemakeView.m */,
+				6067B793205664510066852D /* MASExampleSafeAreaLayoutGuideViewController.h */,
+				6067B794205664510066852D /* MASExampleSafeAreaLayoutGuideViewController.m */,
+				6067B795205664510066852D /* MASExampleScrollView.h */,
+				6067B796205664510066852D /* MASExampleScrollView.m */,
+				6067B797205664510066852D /* MASExampleSidesView.h */,
+				6067B798205664510066852D /* MASExampleSidesView.m */,
+				6067B799205664510066852D /* MASExampleUpdateView.h */,
+				6067B79A205664510066852D /* MASExampleUpdateView.m */,
+				6067B79B205664510066852D /* MASExampleViewController.h */,
+				6067B79C205664510066852D /* MASExampleViewController.m */,
+				6067B79D205664510066852D /* Masonry iOS Examples-Info.plist */,
+				6067B79E205664510066852D /* Masonry iOS Examples-Prefix.pch */,
+			);
+			path = "Masonry iOS Examples";
+			sourceTree = "<group>";
+		};
+		6067B7A0205664510066852D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8D2205664520066852D /* Masonry iOS Examples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6067B7A4205664510066852D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				6067B7A5205664510066852D /* Info.plist */,
+				6067B7A6205664510066852D /* MASCompositeConstraint.h */,
+				6067B7A7205664510066852D /* MASCompositeConstraint.m */,
+				6067B7A8205664510066852D /* MASConstraint+Private.h */,
+				6067B7A9205664510066852D /* MASConstraint.h */,
+				6067B7AA205664510066852D /* MASConstraint.m */,
+				6067B7AB205664510066852D /* MASConstraintMaker.h */,
+				6067B7AC205664510066852D /* MASConstraintMaker.m */,
+				6067B7AD205664510066852D /* MASLayoutConstraint.h */,
+				6067B7AE205664510066852D /* MASLayoutConstraint.m */,
+				6067B7AF205664510066852D /* Masonry.h */,
+				6067B7B0205664510066852D /* MASUtilities.h */,
+				6067B7B1205664510066852D /* MASViewAttribute.h */,
+				6067B7B2205664510066852D /* MASViewAttribute.m */,
+				6067B7B3205664510066852D /* MASViewConstraint.h */,
+				6067B7B4205664510066852D /* MASViewConstraint.m */,
+				6067B7B5205664510066852D /* NSArray+MASAdditions.h */,
+				6067B7B6205664510066852D /* NSArray+MASAdditions.m */,
+				6067B7B7205664510066852D /* NSArray+MASShorthandAdditions.h */,
+				6067B7B8205664510066852D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				6067B7B9205664510066852D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				6067B7BA205664510066852D /* View+MASAdditions.h */,
+				6067B7BB205664510066852D /* View+MASAdditions.m */,
+				6067B7BC205664510066852D /* View+MASShorthandAdditions.h */,
+				6067B7BD205664510066852D /* ViewController+MASAdditions.h */,
+				6067B7BE205664510066852D /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		6067B7C1205664510066852D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8DC205664520066852D /* Masonry.framework */,
+				6067B8DE205664520066852D /* Masonry.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6067B7C6205664520066852D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6067B7C7205664520066852D /* Expecta */,
+				6067B815205664520066852D /* Headers */,
+				6067B888205664520066852D /* Local Podspecs */,
+				6067B88A205664520066852D /* Manifest.lock */,
+				6067B88B205664520066852D /* Pods.xcodeproj */,
+				6067B88E205664520066852D /* Target Support Files */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6067B7C7205664520066852D /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				6067B7C8205664520066852D /* Expecta */,
+				6067B813205664520066852D /* LICENSE */,
+				6067B814205664520066852D /* README.md */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		6067B7C8205664520066852D /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				6067B7C9205664520066852D /* EXPBlockDefinedMatcher.h */,
+				6067B7CA205664520066852D /* EXPBlockDefinedMatcher.m */,
+				6067B7CB205664520066852D /* EXPDefines.h */,
+				6067B7CC205664520066852D /* EXPDoubleTuple.h */,
+				6067B7CD205664520066852D /* EXPDoubleTuple.m */,
+				6067B7CE205664520066852D /* Expecta.h */,
+				6067B7CF205664520066852D /* ExpectaObject.h */,
+				6067B7D0205664520066852D /* ExpectaObject.m */,
+				6067B7D1205664520066852D /* ExpectaSupport.h */,
+				6067B7D2205664520066852D /* ExpectaSupport.m */,
+				6067B7D3205664520066852D /* EXPExpect.h */,
+				6067B7D4205664520066852D /* EXPExpect.m */,
+				6067B7D5205664520066852D /* EXPFloatTuple.h */,
+				6067B7D6205664520066852D /* EXPFloatTuple.m */,
+				6067B7D7205664520066852D /* EXPMatcher.h */,
+				6067B7D8205664520066852D /* EXPUnsupportedObject.h */,
+				6067B7D9205664520066852D /* EXPUnsupportedObject.m */,
+				6067B7DA205664520066852D /* Matchers */,
+				6067B810205664520066852D /* NSObject+Expecta.h */,
+				6067B811205664520066852D /* NSValue+Expecta.h */,
+				6067B812205664520066852D /* NSValue+Expecta.m */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		6067B7DA205664520066852D /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				6067B7DB205664520066852D /* EXPMatcherHelpers.h */,
+				6067B7DC205664520066852D /* EXPMatcherHelpers.m */,
+				6067B7DD205664520066852D /* EXPMatchers+beCloseTo.h */,
+				6067B7DE205664520066852D /* EXPMatchers+beCloseTo.m */,
+				6067B7DF205664520066852D /* EXPMatchers+beFalsy.h */,
+				6067B7E0205664520066852D /* EXPMatchers+beFalsy.m */,
+				6067B7E1205664520066852D /* EXPMatchers+beginWith.h */,
+				6067B7E2205664520066852D /* EXPMatchers+beginWith.m */,
+				6067B7E3205664520066852D /* EXPMatchers+beGreaterThan.h */,
+				6067B7E4205664520066852D /* EXPMatchers+beGreaterThan.m */,
+				6067B7E5205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				6067B7E6205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				6067B7E7205664520066852D /* EXPMatchers+beIdenticalTo.h */,
+				6067B7E8205664520066852D /* EXPMatchers+beIdenticalTo.m */,
+				6067B7E9205664520066852D /* EXPMatchers+beInstanceOf.h */,
+				6067B7EA205664520066852D /* EXPMatchers+beInstanceOf.m */,
+				6067B7EB205664520066852D /* EXPMatchers+beInTheRangeOf.h */,
+				6067B7EC205664520066852D /* EXPMatchers+beInTheRangeOf.m */,
+				6067B7ED205664520066852D /* EXPMatchers+beKindOf.h */,
+				6067B7EE205664520066852D /* EXPMatchers+beKindOf.m */,
+				6067B7EF205664520066852D /* EXPMatchers+beLessThan.h */,
+				6067B7F0205664520066852D /* EXPMatchers+beLessThan.m */,
+				6067B7F1205664520066852D /* EXPMatchers+beLessThanOrEqualTo.h */,
+				6067B7F2205664520066852D /* EXPMatchers+beLessThanOrEqualTo.m */,
+				6067B7F3205664520066852D /* EXPMatchers+beNil.h */,
+				6067B7F4205664520066852D /* EXPMatchers+beNil.m */,
+				6067B7F5205664520066852D /* EXPMatchers+beSubclassOf.h */,
+				6067B7F6205664520066852D /* EXPMatchers+beSubclassOf.m */,
+				6067B7F7205664520066852D /* EXPMatchers+beSupersetOf.h */,
+				6067B7F8205664520066852D /* EXPMatchers+beSupersetOf.m */,
+				6067B7F9205664520066852D /* EXPMatchers+beTruthy.h */,
+				6067B7FA205664520066852D /* EXPMatchers+beTruthy.m */,
+				6067B7FB205664520066852D /* EXPMatchers+conformTo.h */,
+				6067B7FC205664520066852D /* EXPMatchers+conformTo.m */,
+				6067B7FD205664520066852D /* EXPMatchers+contain.h */,
+				6067B7FE205664520066852D /* EXPMatchers+contain.m */,
+				6067B7FF205664520066852D /* EXPMatchers+endWith.h */,
+				6067B800205664520066852D /* EXPMatchers+endWith.m */,
+				6067B801205664520066852D /* EXPMatchers+equal.h */,
+				6067B802205664520066852D /* EXPMatchers+equal.m */,
+				6067B803205664520066852D /* EXPMatchers+haveCountOf.h */,
+				6067B804205664520066852D /* EXPMatchers+haveCountOf.m */,
+				6067B805205664520066852D /* EXPMatchers+match.h */,
+				6067B806205664520066852D /* EXPMatchers+match.m */,
+				6067B807205664520066852D /* EXPMatchers+postNotification.h */,
+				6067B808205664520066852D /* EXPMatchers+postNotification.m */,
+				6067B809205664520066852D /* EXPMatchers+raise.h */,
+				6067B80A205664520066852D /* EXPMatchers+raise.m */,
+				6067B80B205664520066852D /* EXPMatchers+raiseWithReason.h */,
+				6067B80C205664520066852D /* EXPMatchers+raiseWithReason.m */,
+				6067B80D205664520066852D /* EXPMatchers+respondTo.h */,
+				6067B80E205664520066852D /* EXPMatchers+respondTo.m */,
+				6067B80F205664520066852D /* EXPMatchers.h */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		6067B815205664520066852D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6067B816205664520066852D /* Private */,
+				6067B84F205664520066852D /* Public */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6067B816205664520066852D /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				6067B817205664520066852D /* Expecta */,
+				6067B83F205664520066852D /* Masonry */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		6067B817205664520066852D /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				6067B818205664520066852D /* EXPBlockDefinedMatcher.h */,
+				6067B819205664520066852D /* EXPDefines.h */,
+				6067B81A205664520066852D /* EXPDoubleTuple.h */,
+				6067B81B205664520066852D /* Expecta.h */,
+				6067B81C205664520066852D /* ExpectaObject.h */,
+				6067B81D205664520066852D /* ExpectaSupport.h */,
+				6067B81E205664520066852D /* EXPExpect.h */,
+				6067B81F205664520066852D /* EXPFloatTuple.h */,
+				6067B820205664520066852D /* EXPMatcher.h */,
+				6067B821205664520066852D /* EXPMatcherHelpers.h */,
+				6067B822205664520066852D /* EXPMatchers+beCloseTo.h */,
+				6067B823205664520066852D /* EXPMatchers+beFalsy.h */,
+				6067B824205664520066852D /* EXPMatchers+beginWith.h */,
+				6067B825205664520066852D /* EXPMatchers+beGreaterThan.h */,
+				6067B826205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				6067B827205664520066852D /* EXPMatchers+beIdenticalTo.h */,
+				6067B828205664520066852D /* EXPMatchers+beInstanceOf.h */,
+				6067B829205664520066852D /* EXPMatchers+beInTheRangeOf.h */,
+				6067B82A205664520066852D /* EXPMatchers+beKindOf.h */,
+				6067B82B205664520066852D /* EXPMatchers+beLessThan.h */,
+				6067B82C205664520066852D /* EXPMatchers+beLessThanOrEqualTo.h */,
+				6067B82D205664520066852D /* EXPMatchers+beNil.h */,
+				6067B82E205664520066852D /* EXPMatchers+beSubclassOf.h */,
+				6067B82F205664520066852D /* EXPMatchers+beSupersetOf.h */,
+				6067B830205664520066852D /* EXPMatchers+beTruthy.h */,
+				6067B831205664520066852D /* EXPMatchers+conformTo.h */,
+				6067B832205664520066852D /* EXPMatchers+contain.h */,
+				6067B833205664520066852D /* EXPMatchers+endWith.h */,
+				6067B834205664520066852D /* EXPMatchers+equal.h */,
+				6067B835205664520066852D /* EXPMatchers+haveCountOf.h */,
+				6067B836205664520066852D /* EXPMatchers+match.h */,
+				6067B837205664520066852D /* EXPMatchers+postNotification.h */,
+				6067B838205664520066852D /* EXPMatchers+raise.h */,
+				6067B839205664520066852D /* EXPMatchers+raiseWithReason.h */,
+				6067B83A205664520066852D /* EXPMatchers+respondTo.h */,
+				6067B83B205664520066852D /* EXPMatchers.h */,
+				6067B83C205664520066852D /* EXPUnsupportedObject.h */,
+				6067B83D205664520066852D /* NSObject+Expecta.h */,
+				6067B83E205664520066852D /* NSValue+Expecta.h */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		6067B83F205664520066852D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				6067B840205664520066852D /* MASCompositeConstraint.h */,
+				6067B841205664520066852D /* MASConstraint+Private.h */,
+				6067B842205664520066852D /* MASConstraint.h */,
+				6067B843205664520066852D /* MASConstraintMaker.h */,
+				6067B844205664520066852D /* MASLayoutConstraint.h */,
+				6067B845205664520066852D /* Masonry.h */,
+				6067B846205664520066852D /* MASUtilities.h */,
+				6067B847205664520066852D /* MASViewAttribute.h */,
+				6067B848205664520066852D /* MASViewConstraint.h */,
+				6067B849205664520066852D /* NSArray+MASAdditions.h */,
+				6067B84A205664520066852D /* NSArray+MASShorthandAdditions.h */,
+				6067B84B205664520066852D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				6067B84C205664520066852D /* View+MASAdditions.h */,
+				6067B84D205664520066852D /* View+MASShorthandAdditions.h */,
+				6067B84E205664520066852D /* ViewController+MASAdditions.h */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		6067B84F205664520066852D /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				6067B850205664520066852D /* Expecta */,
+				6067B878205664520066852D /* Masonry */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		6067B850205664520066852D /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				6067B851205664520066852D /* EXPBlockDefinedMatcher.h */,
+				6067B852205664520066852D /* EXPDefines.h */,
+				6067B853205664520066852D /* EXPDoubleTuple.h */,
+				6067B854205664520066852D /* Expecta.h */,
+				6067B855205664520066852D /* ExpectaObject.h */,
+				6067B856205664520066852D /* ExpectaSupport.h */,
+				6067B857205664520066852D /* EXPExpect.h */,
+				6067B858205664520066852D /* EXPFloatTuple.h */,
+				6067B859205664520066852D /* EXPMatcher.h */,
+				6067B85A205664520066852D /* EXPMatcherHelpers.h */,
+				6067B85B205664520066852D /* EXPMatchers+beCloseTo.h */,
+				6067B85C205664520066852D /* EXPMatchers+beFalsy.h */,
+				6067B85D205664520066852D /* EXPMatchers+beginWith.h */,
+				6067B85E205664520066852D /* EXPMatchers+beGreaterThan.h */,
+				6067B85F205664520066852D /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				6067B860205664520066852D /* EXPMatchers+beIdenticalTo.h */,
+				6067B861205664520066852D /* EXPMatchers+beInstanceOf.h */,
+				6067B862205664520066852D /* EXPMatchers+beInTheRangeOf.h */,
+				6067B863205664520066852D /* EXPMatchers+beKindOf.h */,
+				6067B864205664520066852D /* EXPMatchers+beLessThan.h */,
+				6067B865205664520066852D /* EXPMatchers+beLessThanOrEqualTo.h */,
+				6067B866205664520066852D /* EXPMatchers+beNil.h */,
+				6067B867205664520066852D /* EXPMatchers+beSubclassOf.h */,
+				6067B868205664520066852D /* EXPMatchers+beSupersetOf.h */,
+				6067B869205664520066852D /* EXPMatchers+beTruthy.h */,
+				6067B86A205664520066852D /* EXPMatchers+conformTo.h */,
+				6067B86B205664520066852D /* EXPMatchers+contain.h */,
+				6067B86C205664520066852D /* EXPMatchers+endWith.h */,
+				6067B86D205664520066852D /* EXPMatchers+equal.h */,
+				6067B86E205664520066852D /* EXPMatchers+haveCountOf.h */,
+				6067B86F205664520066852D /* EXPMatchers+match.h */,
+				6067B870205664520066852D /* EXPMatchers+postNotification.h */,
+				6067B871205664520066852D /* EXPMatchers+raise.h */,
+				6067B872205664520066852D /* EXPMatchers+raiseWithReason.h */,
+				6067B873205664520066852D /* EXPMatchers+respondTo.h */,
+				6067B874205664520066852D /* EXPMatchers.h */,
+				6067B875205664520066852D /* EXPUnsupportedObject.h */,
+				6067B876205664520066852D /* NSObject+Expecta.h */,
+				6067B877205664520066852D /* NSValue+Expecta.h */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		6067B878205664520066852D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				6067B879205664520066852D /* MASCompositeConstraint.h */,
+				6067B87A205664520066852D /* MASConstraint+Private.h */,
+				6067B87B205664520066852D /* MASConstraint.h */,
+				6067B87C205664520066852D /* MASConstraintMaker.h */,
+				6067B87D205664520066852D /* MASLayoutConstraint.h */,
+				6067B87E205664520066852D /* Masonry.h */,
+				6067B87F205664520066852D /* MASUtilities.h */,
+				6067B880205664520066852D /* MASViewAttribute.h */,
+				6067B881205664520066852D /* MASViewConstraint.h */,
+				6067B882205664520066852D /* NSArray+MASAdditions.h */,
+				6067B883205664520066852D /* NSArray+MASShorthandAdditions.h */,
+				6067B884205664520066852D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				6067B885205664520066852D /* View+MASAdditions.h */,
+				6067B886205664520066852D /* View+MASShorthandAdditions.h */,
+				6067B887205664520066852D /* ViewController+MASAdditions.h */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		6067B888205664520066852D /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+				6067B889205664520066852D /* Masonry.podspec.json */,
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		6067B88C205664520066852D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8E5205664520066852D /* libExpecta.a */,
+				6067B8E7205664520066852D /* libMasonry.a */,
+				6067B8E9205664520066852D /* libPods-Masonry iOS Examples.a */,
+				6067B8EB205664520066852D /* libPods-Masonry iOS Tests.a */,
+				6067B8ED205664520066852D /* libPods-MasonryTestsLoader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6067B88E205664520066852D /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6067B88F205664520066852D /* Expecta */,
+				6067B893205664520066852D /* Masonry */,
+				6067B897205664520066852D /* Pods-Masonry iOS Examples */,
+				6067B89F205664520066852D /* Pods-Masonry iOS Tests */,
+				6067B8A7205664520066852D /* Pods-MasonryTestsLoader */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		6067B88F205664520066852D /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				6067B890205664520066852D /* Expecta-dummy.m */,
+				6067B891205664520066852D /* Expecta-prefix.pch */,
+				6067B892205664520066852D /* Expecta.xcconfig */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		6067B893205664520066852D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				6067B894205664520066852D /* Masonry-dummy.m */,
+				6067B895205664520066852D /* Masonry-prefix.pch */,
+				6067B896205664520066852D /* Masonry.xcconfig */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		6067B897205664520066852D /* Pods-Masonry iOS Examples */ = {
+			isa = PBXGroup;
+			children = (
+				6067B898205664520066852D /* Pods-Masonry iOS Examples-acknowledgements.markdown */,
+				6067B899205664520066852D /* Pods-Masonry iOS Examples-acknowledgements.plist */,
+				6067B89A205664520066852D /* Pods-Masonry iOS Examples-dummy.m */,
+				6067B89B205664520066852D /* Pods-Masonry iOS Examples-frameworks.sh */,
+				6067B89C205664520066852D /* Pods-Masonry iOS Examples-resources.sh */,
+				6067B89D205664520066852D /* Pods-Masonry iOS Examples.debug.xcconfig */,
+				6067B89E205664520066852D /* Pods-Masonry iOS Examples.release.xcconfig */,
+			);
+			path = "Pods-Masonry iOS Examples";
+			sourceTree = "<group>";
+		};
+		6067B89F205664520066852D /* Pods-Masonry iOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8A0205664520066852D /* Pods-Masonry iOS Tests-acknowledgements.markdown */,
+				6067B8A1205664520066852D /* Pods-Masonry iOS Tests-acknowledgements.plist */,
+				6067B8A2205664520066852D /* Pods-Masonry iOS Tests-dummy.m */,
+				6067B8A3205664520066852D /* Pods-Masonry iOS Tests-frameworks.sh */,
+				6067B8A4205664520066852D /* Pods-Masonry iOS Tests-resources.sh */,
+				6067B8A5205664520066852D /* Pods-Masonry iOS Tests.debug.xcconfig */,
+				6067B8A6205664520066852D /* Pods-Masonry iOS Tests.release.xcconfig */,
+			);
+			path = "Pods-Masonry iOS Tests";
+			sourceTree = "<group>";
+		};
+		6067B8A7205664520066852D /* Pods-MasonryTestsLoader */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8A8205664520066852D /* Pods-MasonryTestsLoader-acknowledgements.markdown */,
+				6067B8A9205664520066852D /* Pods-MasonryTestsLoader-acknowledgements.plist */,
+				6067B8AA205664520066852D /* Pods-MasonryTestsLoader-dummy.m */,
+				6067B8AB205664520066852D /* Pods-MasonryTestsLoader-frameworks.sh */,
+				6067B8AC205664520066852D /* Pods-MasonryTestsLoader-resources.sh */,
+				6067B8AD205664520066852D /* Pods-MasonryTestsLoader.debug.xcconfig */,
+				6067B8AE205664520066852D /* Pods-MasonryTestsLoader.release.xcconfig */,
+			);
+			path = "Pods-MasonryTestsLoader";
+			sourceTree = "<group>";
+		};
+		6067B8B0205664520066852D /* script */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8B1205664520066852D /* coveralls.sh */,
+				6067B8B2205664520066852D /* exportenv.sh */,
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+		6067B8B3205664520066852D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8B4205664520066852D /* GcovTestObserver.m */,
+				6067B8B5205664520066852D /* Masonry Tests.xcodeproj */,
+				6067B8B8205664520066852D /* MasonryTests-Info.plist */,
+				6067B8B9205664520066852D /* MasonryTests-Prefix.pch */,
+				6067B8BA205664520066852D /* MasonryTestsLoader */,
+				6067B8C3205664520066852D /* NSObject+MASSubscriptSupport.h */,
+				6067B8C4205664520066852D /* Specs */,
+				6067B8CF205664520066852D /* XCTest+Spec.h */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6067B8B6205664520066852D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8D6205664520066852D /* MasonryTestsLoader.app */,
+				6067B8D8205664520066852D /* Masonry iOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6067B8BA205664520066852D /* MasonryTestsLoader */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8BB205664520066852D /* CASAppDelegate.h */,
+				6067B8BC205664520066852D /* CASAppDelegate.m */,
+				6067B8BD205664520066852D /* InfoPlist.strings */,
+				6067B8BF205664520066852D /* Images.xcassets */,
+				6067B8C0205664520066852D /* main.m */,
+				6067B8C1205664520066852D /* MasonryTestsLoader-Info.plist */,
+				6067B8C2205664520066852D /* MasonryTestsLoader-Prefix.pch */,
+			);
+			path = MasonryTestsLoader;
+			sourceTree = "<group>";
+		};
+		6067B8C4205664520066852D /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8C5205664520066852D /* MASCompositeConstraintSpec.m */,
+				6067B8C6205664520066852D /* MASConstraintDelegateMock.h */,
+				6067B8C7205664520066852D /* MASConstraintDelegateMock.m */,
+				6067B8C8205664520066852D /* MASConstraintMakerSpec.m */,
+				6067B8C9205664520066852D /* MASViewAttributeSpec.m */,
+				6067B8CA205664520066852D /* MASViewConstraintSpec.m */,
+				6067B8CB205664520066852D /* NSArray+MASAdditionsSpec.m */,
+				6067B8CC205664520066852D /* NSLayoutConstraint+MASDebugAdditionsSpec.m */,
+				6067B8CD205664520066852D /* View+MASAdditionsSpec.m */,
+				6067B8CE205664520066852D /* ViewController+MASAdditionsSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		6067B8F02056652D0066852D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6067B8F52056652D0066852D /* Masonry.framework */,
+				6067B8F72056652D0066852D /* Masonry.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6067B9082057C0920066852D /* UC */ = {
+			isa = PBXGroup;
+			children = (
+				6067B90F2058FD5F0066852D /* HomeVC */,
+			);
+			path = UC;
+			sourceTree = "<group>";
+		};
+		6067B90F2058FD5F0066852D /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				6067B90420576FE30066852D /* CollectionViewCell.h */,
+				6067B90520576FE30066852D /* CollectionViewCell.m */,
+				6067B9092057C0FA0066852D /* SpaceItem.h */,
+				6067B90A2057C0FA0066852D /* SpaceItem.m */,
+				6067B90C2057C2790066852D /* HorizontalView.h */,
+				6067B90D2057C2790066852D /* HorizontalView.m */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
 		97D33D7C204BAEAE00D27181 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +1272,7 @@
 				97F4D71B204D4121007B957B /* MessageViewController.m */,
 				97EE9A2B20511B590095F7D5 /* ContactsViewController.h */,
 				97EE9A2C20511B590095F7D5 /* ContactsViewController.m */,
+				6067B9082057C0920066852D /* UC */,
 			);
 			path = "Netsuite Mobile Demo";
 			sourceTree = "<group>";
@@ -244,6 +1280,10 @@
 		97D33DA1204BF56100D27181 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6067B9152058FFC90066852D /* Masonry.h */,
+				6067B9132058FF730066852D /* Masonry.podspec */,
+				6067B8EF2056652D0066852D /* Masonry.xcodeproj */,
+				6067B768205664510066852D /* Masonry */,
 				97D33DE0204C3CCC00D27181 /* JavaScriptCore.framework */,
 				97D33DBE204BF77000D27181 /* libicucore.tbd */,
 				97D33DC5204BFA0900D27181 /* iflyMSC.framework */,
@@ -389,12 +1429,121 @@
 			mainGroup = 97D33D7C204BAEAE00D27181;
 			productRefGroup = 97D33D86204BAEAE00D27181 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6067B7A0205664510066852D /* Products */;
+					ProjectRef = 6067B79F205664510066852D /* Masonry iOS Examples.xcodeproj */;
+				},
+				{
+					ProductGroup = 6067B8B6205664520066852D /* Products */;
+					ProjectRef = 6067B8B5205664520066852D /* Masonry Tests.xcodeproj */;
+				},
+				{
+					ProductGroup = 6067B7C1205664510066852D /* Products */;
+					ProjectRef = 6067B7C0205664510066852D /* Masonry.xcodeproj */;
+				},
+				{
+					ProductGroup = 6067B8F02056652D0066852D /* Products */;
+					ProjectRef = 6067B8EF2056652D0066852D /* Masonry.xcodeproj */;
+				},
+				{
+					ProductGroup = 6067B88C205664520066852D /* Products */;
+					ProjectRef = 6067B88B205664520066852D /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				97D33D84204BAEAE00D27181 /* Netsuite Mobile Demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6067B8D2205664520066852D /* Masonry iOS Examples.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Masonry iOS Examples.app";
+			remoteRef = 6067B8D1205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8D6205664520066852D /* MasonryTestsLoader.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MasonryTestsLoader.app;
+			remoteRef = 6067B8D5205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8D8205664520066852D /* Masonry iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Masonry iOS Tests.xctest";
+			remoteRef = 6067B8D7205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8DC205664520066852D /* Masonry.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Masonry.framework;
+			remoteRef = 6067B8DB205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8DE205664520066852D /* Masonry.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Masonry.framework;
+			remoteRef = 6067B8DD205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8E5205664520066852D /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = 6067B8E4205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8E7205664520066852D /* libMasonry.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMasonry.a;
+			remoteRef = 6067B8E6205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8E9205664520066852D /* libPods-Masonry iOS Examples.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-Masonry iOS Examples.a";
+			remoteRef = 6067B8E8205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8EB205664520066852D /* libPods-Masonry iOS Tests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-Masonry iOS Tests.a";
+			remoteRef = 6067B8EA205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8ED205664520066852D /* libPods-MasonryTestsLoader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-MasonryTestsLoader.a";
+			remoteRef = 6067B8EC205664520066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8F52056652D0066852D /* Masonry.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Masonry.framework;
+			remoteRef = 6067B8F42056652D0066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6067B8F72056652D0066852D /* Masonry.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Masonry.framework;
+			remoteRef = 6067B8F62056652D0066852D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		97D33D83204BAEAE00D27181 /* Resources */ = {
@@ -441,9 +1590,11 @@
 				97F4D73A204FE8B8007B957B /* QRCodeBacgrouView.m in Sources */,
 				97F4D738204FE8B8007B957B /* QRCodeVC.m in Sources */,
 				97D33D8A204BAEAE00D27181 /* AppDelegate.m in Sources */,
+				6067B90E2057C2790066852D /* HorizontalView.m in Sources */,
 				97F4D71F204D47DE007B957B /* TabBarViewController.m in Sources */,
 				97F4D737204FE8B8007B957B /* UIViewExt.m in Sources */,
 				97D33DD1204C11AE00D27181 /* StockInViewController.m in Sources */,
+				6067B90620576FE30066852D /* CollectionViewCell.m in Sources */,
 				97F4D725204F97E6007B957B /* RoundButton.m in Sources */,
 				97D33D9B204BAEAF00D27181 /* main.m in Sources */,
 				97D33DDF204C3A5100D27181 /* HomeViewController.m in Sources */,
@@ -451,12 +1602,29 @@
 				97F4D739204FE8B8007B957B /* QRCodeAreaView.m in Sources */,
 				97F4D72E204FC9FA007B957B /* LoginViewController.m in Sources */,
 				97F4D72B204F9E7A007B957B /* VerticalLine.m in Sources */,
+				6067B90B2057C0FA0066852D /* SpaceItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6067B772205664510066852D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6067B773205664510066852D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6067B8BD205664520066852D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6067B8BE205664520066852D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		97D33D91204BAEAF00D27181 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

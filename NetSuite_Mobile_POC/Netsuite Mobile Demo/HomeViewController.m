@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-
+#import <Foundation/Foundation.h>
+#import "CollectionViewCell.h"
 @interface HomeViewController ()
 
 @end
@@ -21,7 +22,47 @@
                                               selector:@selector(loadMessage:)
                                               userInfo:nil
                                                repeats:YES];
+    [self setUI];
+
 }
+
+-(void) setUI{
+    
+    self.myHorizontalView.frame = CGRectMake(self.view.bounds.size.width * 0.03, 101, self.view.bounds.size.width *0.95, self.view.bounds.size.height *0.22);
+    self.myCollection.frame = CGRectMake(self.view.bounds.size.width * 0.03, self.myHorizontalView.frame.origin.y + self.myHorizontalView.frame.size.height + 20, self.view.bounds.size.width *0.95, self.view.bounds.size.height *0.53);
+}
+#pragma mark ---UICollectionView DataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 7;
+}
+
+- (NSArray*)imgName
+{
+    return @[@"commodity_Inquiry",@"stock_take",@"inventory_allocation",@"inbound",@"store_map",@"outbound",@"add"];
+}
+
+- (NSArray*)lblText
+{
+    return @[@"Commodity Inquiry",@"Stock Take",@"Inventory Transfer",@"Inbound",@"Store Map",@"Outbound",@"More"];
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identify = @"myCell";
+    CollectionViewCell *cell = (CollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+    cell.cellImg.image = [UIImage imageNamed: self.imgName[indexPath.row]];
+    cell.cellLbl.text = self.lblText[indexPath.row];
+    cell.cellLbl.textAlignment = NSTextAlignmentCenter;
+    return cell;
+    
+}
+
+//-(CGSize)collectionview:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewlayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+  //  float width = (self.view.bounds.size.width *0.95 -4) /5;
+  //  float height = self.view.bounds.size.height *0.515;
+   // return CGSizeMake(width, width);
+//}
 
 - (void)loadMessage:(NSTimer *)timer {
   [[self.tabBarController.viewControllers objectAtIndex:0] tabBarItem]
