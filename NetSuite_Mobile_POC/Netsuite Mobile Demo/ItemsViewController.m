@@ -22,14 +22,6 @@
     [_webView loadRequest:[NSURLRequest requestWithURL:url]];
 
     self.title = @"Search Results";
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    UIButton *btnitem = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 32, 32)];
-    UIImage *img = [UIImage imageNamed:@"delete"];
-    [btnitem setImage:img forState:UIControlStateNormal];
-    // [v_delete addSubview:btnitem];
-    UIBarButtonItem *btnDelete = [[UIBarButtonItem alloc]initWithCustomView:btnitem];
-    
-    self.navigationItem.rightBarButtonItem = btnDelete;
     // Do any additional setup after loading the view.
 }
 
