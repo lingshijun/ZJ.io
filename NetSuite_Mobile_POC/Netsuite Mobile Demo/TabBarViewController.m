@@ -7,6 +7,7 @@
 //
 
 #import "TabBarViewController.h"
+#import "Masonry.h"
 
 @interface TabBarViewController ()
 
@@ -18,6 +19,8 @@
     [super viewDidLoad];
     //[[self.viewControllers objectAtIndex:2] tabBarItem].badgeValue = @"1";
     self.selectedViewController = [self.viewControllers objectAtIndex:2];
+
+   
     // Do any additional setup after loading the view.
 }
 
@@ -26,6 +29,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+//-(void)viewWillAppear:(BOOL)animated {
+   // for (UIView *views in //self.navigationController.navigationBar.subviews){
+      //  if([views isKindOfClass:[UIButton class]])
+       //     [views removeFromSuperview];
+  // }
+//}
 /*
 #pragma mark - Navigation
 

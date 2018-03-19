@@ -17,52 +17,77 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
+    [self.navigationItem setTitle: @"Messages"];
+    //NSString *cachedMessages = [defaults objectForKey:@"cachedMessages"];
   // Do any additional setup after loading the view.
-}
-- (IBAction)speakVoice:(id)sender {
-  //获取语音合成单例
-  _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
-  //设置协议委托对象
-  _iFlySpeechSynthesizer.delegate = self;
-  //设置合成参数
-  //设置在线工作方式
-  [_iFlySpeechSynthesizer setParameter:[IFlySpeechConstant TYPE_CLOUD]
-                                forKey:[IFlySpeechConstant ENGINE_TYPE]];
-  //设置音量，取值范围 0~100
-  [_iFlySpeechSynthesizer setParameter:@"50"
-                                forKey:[IFlySpeechConstant VOLUME]];
-  //发音人，默认为”xiaoyan”，可以设置的参数列表可参考“合成发音人列表”
-  [_iFlySpeechSynthesizer setParameter:@" xiaoyan "
-                                forKey:[IFlySpeechConstant VOICE_NAME]];
-  //保存合成文件名，如不再需要，设置为nil或者为空表示取消，默认目录位于library/cache下
-  [_iFlySpeechSynthesizer setParameter:@" tts.pcm"
-                                forKey:[IFlySpeechConstant TTS_AUDIO_PATH]];
-  //启动合成会话
-  [_iFlySpeechSynthesizer startSpeaking:@"你"
-                                        @"好，您有一条新的消息"];
-}
-
-// IFlySpeechSynthesizerDelegate协议实现
-//合成结束
-- (void)onCompleted:(IFlySpeechError *)error {
-}
-//合成开始
-- (void)onSpeakBegin {
-}
-//合成缓冲进度
-- (void)onBufferProgress:(int)progress message:(NSString *)msg {
-}
-//合成播放进度
-- (void)onSpeakProgress:(int)progress
-               beginPos:(int)beginPos
-                 endPos:(int)endPos {
+    
+    
+//    NSString *htmlPath =
+//    [[NSBundle mainBundle] pathForResource:@"pages/html/homepage" ofType:@"html"];
+//    NSURL *url = [NSURL fileURLWithPath:htmlPath];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:(NSTimeInterval)10.0 ];
+//
+//    [_webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+    
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    NSString *htmlPath =
+    [[NSBundle mainBundle] pathForResource:@"pages/html/systemMessage" ofType:@"html"];
+    NSURL *url = [NSURL fileURLWithPath:htmlPath];
+    NSString *theAbsoluteURLString = [url absoluteString];
+    
+    NSString *queryString = @"?userid=1232123232";
+    
+    NSString *absoluteURLwithQueryString = [theAbsoluteURLString stringByAppendingString: queryString];
+    
+    NSURL *finalURL = [NSURL URLWithString: absoluteURLwithQueryString];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:finalURL cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:(NSTimeInterval)0.0 ];
+    
+    [_webView loadRequest:request];
+    
+    
+    
+//    NSString *storedURL = @"system.na3.netsuite.com/core/media/media.nl?id=31179&c=4761902&h=6e96248aa8723b38122a&_xt=.html&userId=";
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    NSString *userName = [defaults objectForKey:@"userName"];
+//    NSString *userId;
+//    if([userName isEqualToString:@"user1"]){
+//        userId = @"1";
+//    }else if([userName isEqualToString:@"user2"]){
+//        userId = @"2";
+//    }else {
+//        userId = @"1";
+//    }
+//
+//    NSString *urlstring = [NSString stringWithFormat:@"https://%@",storedURL];
+//    urlstring = [urlstring stringByAppendingString:userId];
+//    NSURL *url = [NSURL URLWithString:urlstring];
+//    [_webView loadRequest:[NSURLRequest requestWithURL:url]];
+    //[_webView reload];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    JSContext *context = [_webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+        
+    context[@"queryMessageFromOC"] = ^{
+        NSLog(@"queryMessageFromOC in");
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *cachedMessages = [defaults objectForKey:@"cachedMessages"];
+        [context[@"queryMessageFromOCCallBack"] callWithArguments:@[cachedMessages]];
+    };
+    
+        
+}
+    
 /*
 #pragma mark - Navigation
 

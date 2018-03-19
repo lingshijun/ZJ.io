@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <title>Bootstrap 实例 - 带表格的面板</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/message.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/message/main.js"></script>
+
+
+</head>
+<body style="background-color: #F5F7FA;">
+
+
+<!--"-->
+<div  class="container-fluid" style="padding-top: 1rem;width:100%;padding-left: 1rem;">
+
+    <!--left message list div start-->
+
+    <div style="float: left;width: 35%;border: none;">
+        <div style="padding:0 1rem 1rem 0rem;">
+           <!-- <input type="text" style="width: 95%;">-->
+            <span class="badge badge-pill badge-primary" style="width: 100%;background-color: white; border: 1px #ddd solid;text-align: left;line-height: 2rem;">
+                <img style="padding-left: 0.5rem;" src="https://system.na3.netsuite.com/core/media/media.nl?id=31563&c=4761902&h=48db11c879cca08f4cfd&_xt=.svg">
+            </span>
+        </div>
+        <div class="list-group" style="border: none;" id="divMessageTitleList">
+
+            <a href="#" class="list-group-item"  >
+                <div class="left">
+                    <button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-heart"></i>
+                    </button>
+                    <label class="" >Inventory Transfer Request aaa</label>
+                </div>
+                <div class="right">
+                    <div style="float: left"> from:<label>Shangdi</label></div>
+                    <div style="float: right;">2 hours ago</div>
+                </div>
+
+            </a>
+            <a href="#" class="list-group-item ">
+                <div class="left">
+                    <button type="button" class="btn btn-danger btn-circle-gray"><i
+                            class="glyphicon glyphicon-heart"></i>
+                    </button>
+                    Inventory Transfer Request
+                </div>
+                <div class="right">
+                    <div style="float: left"> from:<label>Shangdi</label></div>
+                    <div style="float: right;">2 hours ago</div>
+                </div>
+
+            </a>
+        </div>
+
+    </div>
+
+    <!-- left message list div end-->
+
+    <!-- right  message div start-->
+
+    <div style="float: left;width: 61%;height:800px;border: 1px #ddd solid;background-color: white;" id="divRightDetail">
+        <div id="divTest" style="display: none;">
+
+
+            <div class="jumbotron" style="background-color: transparent;padding-left: 2rem;">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead"> This is a test message.</p>
+                <hr class="my-4">
+            </div>
+        </div>
+        <div style="padding: 1rem 2rem 2rem 2rem;display: none;" id="divMessageDetail">
+            <div style="color: #898989;text-align: center;padding: 0rem 0rem 1rem 0rem;" id="divRightMessageTime">
+                11:44 am
+            </div>
+            <div class="card" id="divMessageCard">
+                <div class="card-header" style="background-color: #496387;color: white;" id="divRightMessageTitle">
+                    Inventory Transfer | Require Your Approval
+                </div>
+                <div class="card-body"  >
+                    <div style="color: #496387;font-weight: bold;" id="divFromLocationName">
+                        Qumei Furniture China(SanYuan Qiao)
+                    </div>
+
+                    <div class="row" style="padding-top: 1rem;">
+                        <div class="col-xl-3">
+                            <div class="thumbnail"
+                                 style="border: none;display:flex;align-items:center;justify-content:left;">
+                                <div style="float: left;"><img id="itemImageSrc"
+                                                               src="https://system.na3.netsuite.com/core/media/media.nl?id=31178&c=4761902&h=1fd690faacfcc7e176f3"
+                                                               alt=""></div>
+                                <div style="float:left;padding-left: 1rem;">
+                                    <label>X <label id="lbItemTransferNum">1</label> </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-footer" style="background-color: white;" id="divCardFooter">
+                    <div class="caption" style="border:1px solid transparent;">
+                        <div style="float: left;color: #898989;padding-top: 5px;">
+                            <label>Quantity: <label id="lbTotalTransferCount">4</label></label>
+                            <label style="padding-left: 1rem;">Total: <label id="lbTotalPrice">¥1,005,00</label></label>
+                        </div>
+                        <div style="float: right;">
+                            <span class="badge badge-pill badge-primary btn-normal" id="btnDetail">Detail</span>
+                           <!-- <input class="btn btn-primary" type="button" value="Detail" id="btnDetail"   >-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- right message div start-->
+
+
+    <!--right approval div start-->
+
+    <div style="float: left;width: 61%;height:720pt;border: 1px #ddd solid;background-color: white;display:none;" id="divRightApproval">
+        <div style="padding: 1rem 2rem 2rem 2rem;" id="divApprovalDetail"  >
+            <div style="color: #898989;text-align: center;padding: 0rem 0rem 1rem 0rem;" id="divRightApprovalTime">
+                11:44 am
+            </div>
+            <div class="card" id="divApprovalCard">
+                <div class="card-header" style="background-color: #496387;color: white;" id="divRighApprovalTitle">
+                    Inventory Transfer | Require Your Approval
+                </div>
+
+                <div class="card-body" style="padding-bottom: 0rem;">
+                    <div class="location-name" id="divRightApprovalFromLocationName">
+                        Qumei Furniture China(SanYuan Qiao)
+                    </div>
+                    <div class="location-address" id="divRightApprovalFromLocationAddress">
+                        1312 E Gebeva St, Haidian District, Beijing, China
+                    </div>
+                    <hr class="my-2">
+                    <div class="thumbnail thumbnail-custom">
+                        <div class="thumbnail-left">
+                            <img id="divRightApprovalItemImageSrc" src="https://system.na3.netsuite.com/core/media/media.nl?id=31178&c=4761902&h=1fd690faacfcc7e176f3">
+                        </div>
+                        <div class="thumbnail-right">
+                            <div id="divRightDetailItemName">
+                                <p  class="item-name">Whiteboard Marker</p>
+                                <p class="item-size">10x20x30</p>
+                            </div>
+                            <div  class="approve-div-total-data">
+                                <div class="left" ><label>Required Quantity: <label>1</label></label>
+                                    <label style="padding-left: 2rem;">Quantity on Hand: <label>200</label></label>
+                                </div>
+                                <div class="right" ><label>Transfer Price: <label>￥1.50</label></label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body" style="padding-bottom: 0rem;">
+                    <div class="location-name" >
+                        Qumei Furniture China(SanYuan Qiao)
+                    </div>
+                    <div class="location-address" >
+                        1312 E Gebeva St, Haidian District, Beijing, China
+                    </div>
+                    <hr class="my-2">
+                    <div class="thumbnail thumbnail-custom">
+                        <div class="thumbnail-left">
+                            <img  src="https://system.na3.netsuite.com/core/media/media.nl?id=31178&c=4761902&h=1fd690faacfcc7e176f3">
+                        </div>
+                        <div class="thumbnail-right">
+                            <div >
+                                <p  class="item-name">Whiteboard Marker</p>
+                                <p class="item-size">10x20x30</p>
+                            </div>
+                            <div  class="approve-div-total-data">
+                                <div class="left" ><label>Required Quantity: <label>1</label></label>
+                                    <label style="padding-left: 3rem;">Quantity on Hand: <label>200</label></label>
+                                </div>
+                                <div class="right" ><label>Transfer Price: <label>￥1.50</label></label></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card-footer" style="background-color: white;" id="divApprovalCardFooter">
+                    <div><textarea class="form-control" rows="3" id="txtApproval"></textarea></div>
+                    <div style="text-align: right;padding-top: 1rem;" id="divApprovalButton">
+                        <label id="lbApprovalResult" style="color: red;"></label>
+                        <span class="badge badge-pill badge-primary btn-normal-gray" id="btnReject">Reject</span>
+                        <span class="badge badge-pill badge-primary btn-normal" id="btnApprove">Approve</span>
+                      <!--  <input class="btn btn-secondary" type="button" value="Reject" id="btnReject">
+                        <input class="btn btn-primary" type="button" value="Approve" id="btnApprove">-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- right approval div end-->
+
+</div>
+</body>
+</html>

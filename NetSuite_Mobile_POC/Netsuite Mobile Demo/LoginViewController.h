@@ -11,5 +11,6 @@
 
 @interface LoginViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UnderlinedTextField *userName;
+@property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 
 @end

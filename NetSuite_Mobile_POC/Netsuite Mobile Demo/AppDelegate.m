@@ -39,6 +39,7 @@
   // in application:didFinishLaunchingWithOptions:)
   [IFlySpeechUtility createUtility:initString];
 
+  [self resetDefaults];
   return YES;
 }
 
@@ -77,4 +78,12 @@
   // appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)resetDefaults {
+    NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+    NSDictionary * dict = [defs dictionaryRepresentation];
+    for (id key in dict) {
+        [defs removeObjectForKey:key];
+    }
+    [defs synchronize];
+}
 @end

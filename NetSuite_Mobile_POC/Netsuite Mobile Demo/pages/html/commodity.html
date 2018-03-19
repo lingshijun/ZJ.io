@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Search Result</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/commodity/commodity.js"></script>
+    <link href="../css/commodity.css" rel="stylesheet">
+
+    <!-- below files were link to netsuite, but it will auto load related files like bootstrap.min.css.map.
+    DevTools failed to parse SourceMap: https://system.na3.netsuite.com/core/media/bootstrap.min.css.map
+    the function: modal popup , layout will be impact.
+    -->
+    <!--../css/bootstrap.min.css-->
+    <!--../js/jquery-3.2.1.js-->
+    <!--../js/bootstrap.min.js-->
+    <!--.../css/popper.min.js-->
+    <!-- project js file-->
+    <!-- project js file-->
+    <!--
+
+    <link href="https://system.na3.netsuite.com/core/media/media.nl?id=31164&c=4761902&h=7ca9271fa4483f79e2ca&_xt=.css"
+          rel="stylesheet"/>
+    <script src="https://system.na3.netsuite.com/core/media/media.nl?id=31159&c=4761902&h=e8c49a325a6f89a8d592&_xt=.js"/>
+    <script src="https://system.na3.netsuite.com/core/media/media.nl?id=31173&c=4761902&h=df015ef01b49fd2042e4&_xt=.js"/>
+    <script src="https://system.na3.netsuite.com/core/media/media.nl?id=31177&c=4761902&h=72a44953ad4c30265e63&_xt=.js"/>
+    <script src="https://system.na3.netsuite.com/core/media/media.nl?id=31862&c=4761902&h=9dd34b5e30062384d947&_xt=.js"/>
+    <link href="https://system.na3.netsuite.com/core/media/media.nl?id=31863&c=4761902&h=fb0613441d1d28694177&_xt=.css" rel="stylesheet"/>
+    -->
+
+    <!-- use style sheet from offical , layout problem.
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+        /**set commodity's count when load page **/
+        window.onload = function () {
+            document.getElementById("quantity").innerHTML = "Quantity: &nbsp;" + total_count;
+        }
+    </script>
+
+</head>
+
+<body style="background: #F3F6F9; font-family: Helvetica; font-size: 14pt">
+
+<!--search top-->
+<div class="d-flex flex-md-row flex-lg-row flex-xl-row align-items-left p-md-3 p-lg-3 pxl-3  m-md-4 m-lg-4 m-xl-4 ">
+    <div style="width: 85%; height:2rem" class="input-group mt-md-3 mt-lg-3 mt-xl-3 ">
+        <!--
+        <input class="search form-control" placeholder="Search">
+              <input type="text" style="width: %;">
+        -->
+        <span class="badge badge-pill badge-light "
+              style="width: 100%;  background-color: #FFFFFF; border: 1px #ddd solid;text-align: left;line-height: 1.25rem;">
+            <img style="padding-left: 0.5rem;"
+                 src="https://system.na3.netsuite.com/core/media/media.nl?id=31563&c=4761902&h=48db11c879cca08f4cfd&_xt=.svg">
+            <input type="text" style="border:#FF0000; height: 100%; width: 80%; border-width: 0">
+           </span>
+    </div>
+
+    <div style="width: 15%" class="ml-md-4 ml-lg-4 ml-xl-4 mt-lg-0 mt-lg-0 mt-xl-0">
+        <!--        <img src="../image/shoppingCart@2x.png" style="margin-left:1rem;height: 60px;width: 60px;"> -->
+        <div class="item">
+            <a href="#" data-toggle="modal" data-target="#exampleModal" onclick="clickShoppingcart()">
+                <span id="shopcart_badge" class="notify-badge " hidden></span>
+                <img src="https://system.na3.netsuite.com/core/media/media.nl?id=31356&c=4761902&h=e2b99f85e5577833294a"
+                     class="icon_size_30" style="margin-left:1rem; ">
+            </a>
+        </div>
+
+        <!--        <img src="../image/filter@2x.png" style="margin-left:1rem;margin-right:-1rem;height: 60px;width: 60px;"/>
+        -->
+        <img src="https://system.na3.netsuite.com/core/media/media.nl?id=31357&c=4761902&h=42f39e0790c5404d15d9" onclick="transfer()"
+             class="icon_size_30" style="margin-left:1rem; margin-right:-1rem; "/>
+    </div>
+</div>
+<!-- commidy category and list-->
+<div class="row">
+    <!--left: category-->
+    <div class="col-md-2 col-lg-2 col-xl-2 sidebar-sticky ">
+        <ul class="nav text-color-default flex-column">
+            <li class="category-selected">All Categories</li>
+            <li>Bathroom</li>
+            <li>Bedroom</li>
+            <li>Children</li>
+            <li>Cooking</li>
+            <li>Decoration</li>
+            <li>Eating</li>
+        </ul>
+    </div>
+
+    <div class="col-md-10 col-lg-10 col-xl-10 ">
+        <div class="row m-md-2 m-lg-2 m-xl-2">
+            <div class="col-lg-6  col-xl-6 col-md-6 " style="height: 150px; ">
+                <div style="float:left">
+                    <!--
+                    <img src="../image/penimage250.svg" class="p-0 m-0"/>
+                    -->
+                    <img class="card-img-bottom img-commodity-size p-0 m-0"
+                         src="https://system.na3.netsuite.com/core/media/media.nl?id=31358&c=4761902&h=eb5857aad80f780cd508&_xt=.svg"/>
+
+                    <div class="pl-lg-3 pt-lg-3 "
+                         style="background: #FFFFFF; height: 150px; width:225px; padding-left:1rem ;float:right ; font-size: 14px">
+                        <div style="font-family: Helvetica-Bold ; color:#4D5F79  ">Whiteboard Marker</div>
+                        <div style="font-family: Helvetica ; color:#888888  " class="mt-lg-1 mt-xl-1 pt-lg-0">
+                            <div>
+                                Red
+                            </div>
+                            <div>
+                                Brand:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nova
+                            </div>
+                            <div style=" overflow:hidden; width:180px; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;">
+                                Supplier: &nbsp;Tianjin Hongshan,China</br>
+                            </div>
+                            <div class="row mt-lg-0" style="height:2rem; width:15rem">
+                                <div id="quantity" class="col-6">
+                                    Quantity: &nbsp;0
+                                </div>
+                                <div class="col-6 ">
+                                    <!--
+                                    <img src="../image/minus24@2x.png"  height="24px" width="24px" disabled data-type="minus" data-field="quant"  onclick="minus-main()"/>
+                                    -->
+                                    <img id="minus"
+                                         src="https://system.na3.netsuite.com/core/media/media.nl?id=31561&c=4761902&h=add124084d1be6dbb959"
+                                         height="24px" width="24px" hidden onclick="clickMinus()"/>
+                                    <span id="quant" class="px-md-2 px-lg-2 px-xl-2 pr-md-2 pr-lg-2 pr-xl-2"
+                                          style="color: #F56223;" hidden>0</span>
+                                    <!--
+                                <img src="../image/plus24@2x.png" height="24px" width="24px"  data-type="plus" data-field="quant"  onclick="plus-main()"/>
+                                -->
+                                    <img id="plus"
+                                         src="https://system.na3.netsuite.com/core/media/media.nl?id=31560&c=4761902&h=6ecc4bbd1d3e0d409970"
+                                         height="24px" width="24px" onclick="clickPlus()"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!--modal-->
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div style="color:#4D5F79 ;  font-size: 14px; " class="col-md-3 col-lg-3 col-xl-3 ">
+                                <div onclick="cleanShoppingCart()">Clean</div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6 ">
+                                <div style="color:#4D5F79 ; font-size: 18px; text-align: center ">Selected Items</div>
+                            </div>
+                        </div>
+                        <!--data-->
+
+                        <div id="selected_list">
+                            <!--弹出时，动态读取当前的选择状态，填充内容-->
+                        </div>
+
+                    </div>
+                </div>
+                <div style="background-color: #E0E6EF" class="modal-footer">
+
+                    <div class=" mb-lg-2 mb-xl-2" id="opeartion">
+                        <div class="pr-lg-1; text-lg-right">
+                            Total Count: <span id="total_selected_modal">2</span>
+                        </div>
+                        <form class="form-inline">
+                            <button class="modal_button">Inbound</button>
+                            <button class="modal_button">Outbound</button>
+                            <button class="modal_button" onclick="goto_transfer_page(selectCount)">Transfer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

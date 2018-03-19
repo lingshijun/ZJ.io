@@ -62,7 +62,7 @@ int contentNum = 0;
             [self addSubview:rightLine];
             [rightLine mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.right.equalTo(sectionView);
-                make.top.equalTo(sectionView).offset(35);
+                make.top.equalTo(sectionView).offset(30);
                 make.height.mas_equalTo(128);
                 make.width.mas_equalTo(1);
             }];

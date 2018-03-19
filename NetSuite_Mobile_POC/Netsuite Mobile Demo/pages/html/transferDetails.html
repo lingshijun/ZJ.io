@@ -2,41 +2,328 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <title>Transfer Details</title>
 
-    <!--
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
-    <script type="text/javascript" src="../js/homepage.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="../js/popper.js"></script>
-    <script type="text/javascript" src="../js/transfer/main.js"></script>
-    -->
-    <!-- -->
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script type="text/javascript" src="../js/transfer_main.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/mustache.js"></script>
 
-    <script type="text/javascript" src="homepage.js"></script>
-    <script type="text/javascript" src="bootstrap.js"></script>
-    <script type="text/javascript" src="jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="popper.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <!-- -->
+    <style type="text/css">
+        .containerBackground {
+            background: #FFFFFF;
+            box-shadow: 0 1pt 4pt -1pt rgba(158, 158, 158, 0.50);
+        }
+
+        .containerCol {
+            float: left;
+            height: 380pt;
+            width: 380pt;
+        }
+
+        .itemTitle {
+            font-family: Helvetica-Bold,serif;
+            font-size: 14pt;
+            color: #4D5F79;
+            letter-spacing: -0.02pt;
+        }
+
+        .itemSubTitle {
+            font-family: Helvetica,serif;
+            font-size: 14pt;
+            color: #F56223;
+            letter-spacing: -0.02pt;
+            margin-left: 10pt;
+        }
+
+        .itemBody {
+            font-family: Helvetica,serif;
+            font-size: 14pt;
+            color: #888888;
+            letter-spacing: -0.02pt;
+        }
+
+        .address, .itemName {
+            font-family: Helvetica,serif;
+            font-size: 14pt;
+            color: #4D5F79;
+            letter-spacing: -0.02pt;
+            width: 270pt;
+            height: 17pt;
+            float: left;
+            margin-left: 10pt;
+        }
+
+        .distance, .price, .addressLocation, .mapInfoText {
+            font-family: Helvetica,serif;
+            font-size: 12pt;
+            color: #888888;
+            letter-spacing: -0.02pt;
+            text-align: right;
+            height: 17pt;
+            float: right;
+            margin-left: 10pt;
+        }
+
+        .count {
+            font-family: Helvetica,serif;
+            font-size: 14pt;
+            color: #888888;
+            letter-spacing: -0.02pt;
+            height: 17pt;
+            margin-left: 10pt;
+        }
+
+        .mark {
+            font-family: Helvetica-Bold,serif;
+            font-size: 14pt;
+            color: #FFFFFF;
+            letter-spacing: -0.02pt;
+            background-color: #f54336;
+            height: 17pt;
+            width: 20pt;
+            text-align: center;
+            line-height: 17pt;
+            padding-bottom: 0;
+            padding-top: 0;
+            float: left;
+        }
+
+        .collapseButton {
+            width: 100%;
+            text-align: left;
+            border: 0;
+            background: transparent;
+        }
+
+        .useTheScheduleBtn {
+            background: #607799;
+            border-radius: 21pt;
+            height: 24pt;
+            width: 350pt;
+            text-align: center;
+            font-family: PingFangSC-Regular,serif;
+            font-size: 14pt;
+            color: #FFFFFF;
+            letter-spacing: 0.01pt;
+        }
+
+        .mapInfoCount {
+            font-family: Helvetica,serif;
+            font-size: 14pt;
+            color: #F56223;
+            letter-spacing: -0.02pt;
+            text-align: center;
+        }
+
+        .mapInfoItemsActionBtn {
+            background: #E0E6EF;
+            border-radius: 53pt;
+            font-family: PingFangSC-Regular,serif;
+            font-size: 14pt;
+            color: #4D5F79;
+            letter-spacing: 0.01pt;
+            text-align: center;
+            height: 24pt;
+            width: 60pt;
+            border: 0;
+            margin-left: 16pt;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: #f5f7fa;">
+
+<div>
+    <div class="containerBackground"
+         style="position: relative; margin-left: 32pt; margin-top: 20pt; height: 120pt; line-height: 120pt; width: 300pt;">
+        <img src="../image/create-own-sofa.jpg" style="border: solid #E0E6EF; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; width: 120pt; height: 120pt;"/>
+        <span class="itemTitle" style="position: absolute; left: 140pt; top: 10pt; line-height: 17pt;">Sofa #1</span>
+        <span class="itemBody" style="position: absolute; left: 140pt; top: 60pt; line-height: 17pt;">150x30x80</span>
+        <span class="itemBody" style="position: absolute; left: 140pt; top: 83pt; line-height: 17pt;">Transfer: 2</span>
+        <div style="position: absolute;line-height: 30pt;width:  30pt;left: 269pt;top: 88pt;">
+            <img src="../image/selected.png" style="height: 30pt; width: 30pt;">
+        </div>
+
+    </div>
+
+    <div class="containerBackground" style="position: relative; margin-left: 32pt; margin-top: 20pt;">
+        <div class="containerCol" id="mapContainer">
+            <div style="padding-left: 35pt;line-height: 380pt; background: #FFFFFF; box-shadow: 0 1pt 4pt -1pt rgba(158,158,158,0.50);">
+                <img src="../image/loading.gif" height="233" width="414"/>
+            </div>
+        </div>
+        <div id="accordion" class="containerCol" style="overflow-y: auto; background: #FFFFFF; box-shadow: 0 1pt 4pt -1pt rgba(158,158,158,0.50);">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <button class="btn collapseButton collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <span class="itemTitle">My Schedule</span>
+                    </button>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Empty.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <button class="btn collapseButton" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <span class="itemTitle">Recommendation 1<span class="itemSubTitle">Shortest distance</span></span>
+                    </button>
+                </div>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <button class="btn collapseButton collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="itemTitle">Recommendation 2<span class="itemSubTitle">Lowest price</span></span>
+                    </button>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Recommendation 2
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <button class="btn collapseButton collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="itemTitle">Recommendation 3</span>
+                    </button>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        Recommendation 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<template id="mapInfoItemTemplate">
+    {{#items}}
+    <div>
+        <div class="itemName" style="width: 264pt;">{{itemName}}</div>
+        <div class="price">¥{{price}}</div>
+    </div>
+    <div style="position: relative; top: 10pt;">
+        <div class="mapInfoText" style="float: left; text-align: center; vertical-align: middle; line-height: 24pt; height: 24pt;">{{size}}</div>
+        <div class="mapInfoText" style="float: left; text-align: center; vertical-align: middle; line-height: 24pt; height: 24pt;">{{quantity}}</div>
+        <div style="float: left; margin-left: 15pt;">
+            <span style="display: inline-block; vertical-align: middle"
+                onclick="minus('mapInfoCount{{uuid}}')">
+                <img style="border: 0;" src="../image/minus.png" height="24" width="24"/>
+            </span>
+        </div>
+        <div id="mapInfoCount{{uuid}}"
+             style="float: left; text-align: center; vertical-align: middle; line-height: 24pt; height: 24pt; width: 20pt;"
+             class="mapInfoCount">
+            0
+        </div>
+        <div style="float: left;">
+            <span style="display: inline-block; vertical-align: middle"
+                  onclick="plus('mapInfoCount{{uuid}}')">
+                <img style="border: 0;" src="../image/plus.png" height="24" width="24"/>
+            </span>
+        </div>
+        <div style="float: left; text-align: center; line-height: 24pt; height: 24pt; vertical-align: middle;">
+            <button class="mapInfoItemsActionBtn"
+                onclick="buildCollapseOneBodyFromMapInfo('{{addAction}}', 'mapInfoCount{{uuid}}')">
+                Add
+            </button>
+        </div>
+    </div>
+    {{/items}}
+</template>
+
+<template id="mapInfoTemplateHeader">
+    <div style="margin-top: 12pt;">
+        <div class="rounded-circle mark">{{markIndex}}</div>
+        <div class="address" style="width: 257pt;">{{address}}</div>
+        <div class="distance">{{distance}}km</div>
+    </div>
+</template>
+
+<template id="mapInfoTemplate">
+    <div style="margin-top: 10pt;">
+        <div class="addressLocation" style="float: left;">
+            {{addressLocation}}
+        </div>
+        <div style="position: relative; top: 22pt;">
+            <hr style="height: 1pt;background: #C3D1DE;margin: 0 0 0 0; margin-left: 10pt;"/>
+        </div>
+        <div style="margin-top: 30pt;">
+            {{{mapInfoItems}}}
+        </div>
+    </div>
+</template>
+
+<template id="itemTemplate">
+    {{#items}}
+    <div>
+        <div class="rounded-circle mark">{{markIndex}}</div>
+        <div class="address">{{address}}</div>
+        <div class="distance">{{distance}}km</div>
+    </div>
+    <div style="padding-top: 37pt; margin-bottom: 10pt;">
+        <img src="../image/create-own-sofa.jpg" style="border: 1pt solid #E0E6EF; height: 50pt; width: 50pt;"/>
+        <span class="count">x{{count}}</span>
+    </div>
+    {{/items}}
+</template>
+
+<template id="cardBodyTemplate">
+    <div class="card-body">
+        <div>
+            {{{cardBodyItems}}}
+        </div>
+        <div style="margin-top: 2pt; text-align: center;">
+            <button class="useTheScheduleBtn" onclick="{{action}}">{{actionBtn}}</button>
+        </div>
+    </div>
+</template>
 
 <script>
 
-    $( document ).ready(function() {
-                        alert(123);
+    $(document).ready(function () {
         var c = getParamFromURL('c');
-                         alert(c);
         console.log(c);
-        $("#param").html(c);
+
+        // build schedule bodies
+        buildScheduleBody(getCollapseTwoModel(c), "collapseTwo");
+        buildScheduleBody(getCollapseThreeModel(c), "collapseThree");
+        buildScheduleBody(getCollapseFourModel(c), "collapseFour");
+
+        /**
+         * map
+         */
+        var script = document.createElement("script");
+        script.src = "https://api.map.baidu.com/api?v=2.0&ak=m5yBy7PNQ9lg9Kgr7QQYNjiuV3FMp449&callback=initialize";
+        document.body.appendChild(script);
+
     });
+
+    function initialize() {
+        var map = new BMap.Map("mapContainer");
+        // 创建地图实例
+        var point = new BMap.Point(116.404, 39.915);
+        // 创建点坐标
+        map.centerAndZoom(point, 12);
+        // 初始化地图，设置中心点坐标和地图级别
+
+        makeMapMark(map);
+        setZoom(map);
+    }
 </script>
-<p>
-    Parameter is: <div id="param"></div>
-</p>
 </body>
 </html>

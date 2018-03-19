@@ -16,10 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-      NSString *path = [[NSBundle mainBundle] bundlePath];
-      NSURL *baseURL = [NSURL fileURLWithPath:path];
-      NSString *htmlPath =
-          [[NSBundle mainBundle] pathForResource:@"transferDetails" ofType:@"html"];
+    
+    [self.navigationItem setTitle: @"Transfer Detail"];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    
+    NSString *htmlPath =
+          [[NSBundle mainBundle] pathForResource:@"pages/html/transferDetails" ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:htmlPath];
      NSString *theAbsoluteURLString = [url absoluteString];
     
@@ -33,12 +35,18 @@
     
     [_webView loadRequest:request];
 }
-
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+    - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+        //read your request here
+        //before the webview will load your request
+        return YES;
+    }
+    
 /*
 #pragma mark - Navigation
 

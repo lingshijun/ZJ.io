@@ -1,0 +1,137 @@
+
+.btn-circle {
+    width: 1rem;
+    height: 1rem;
+    padding: 0 0 0 0;
+    line-height: 1.428571429;
+    border-radius: 1rem;
+    margin-top: -0.3rem;
+
+}
+
+.btn-circle-gray {
+    width: 1rem;
+    height: 1rem;
+    padding: 0 0 0 0;
+    line-height: 1.428571429;
+    border-radius: 1rem;
+    background-color: #ddd;
+    border-color: #ddd;
+    margin-top: -0.3rem;
+}
+
+.btn-normal {
+    background-color: #607799;
+    font-size: medium;
+    font-weight: normal;
+    line-height: 2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.btn-normal-gray {
+    background-color: #E0E6EF;
+    font-size: medium;
+    font-weight: normal;
+    line-height: 2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.list-group a:hover {
+    background-color: white;
+    border: 1px #ddd solid;
+    border-right: white;
+    margin-right: -2px;
+}
+
+.list-group a {
+    background-color: transparent;
+    border: none;
+}
+
+.list-group a.selected {
+    background-color: white;
+    border: 1px #ddd solid;
+    border-right: white;
+    margin-right: -2px;
+}
+
+.list-group-item div.left {
+    color: #4D5F79;
+    font-family: Helvetica-Bold;
+    vertical-align: middle;
+}
+
+.list-group-item div.left label {
+    padding: 1rem 0rem 0rem 0.5rem;
+}
+
+.list-group-item div.right {
+    color: #888888;
+    font-family: Helvetica;
+    padding-top: 0.5rem;
+    padding-bottom: -0.5rem;
+}
+
+/*
+right approve style*/
+
+.location-name {
+    color: #4D5F79;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+.location-address {
+    color: #888888;
+    font-family: Helvetica;
+    font-size: small;
+}
+
+.thumbnail-custom {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.thumbnail-left {
+    float: left;
+}
+
+.thumbnail-right {
+    float: left;
+    margin: 0rem 0rem 0rem 0.5rem;
+    width: 100%;
+}
+
+.item-name {
+    color: #4D5F79;
+    margin: 0rem;
+    padding-top: 0.5rem;
+    font-size: medium;
+}
+
+.item-size {
+    color: #888888;
+    margin: 0rem;
+    padding-top: 0.5rem;
+}
+
+.approve-div-total-data {
+    width: 100%;
+    color: #888888;
+    padding-top: 0.5rem;
+    font-size: x-small;
+}
+
+.approve-div-total-data div.left {
+    float: left;
+    width: 60%
+}
+
+.approve-div-total-data div.right {
+    float: right;
+}

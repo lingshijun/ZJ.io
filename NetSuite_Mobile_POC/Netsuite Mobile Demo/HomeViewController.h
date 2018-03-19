@@ -11,6 +11,7 @@
 #import "iflyMSC/IFlyMSC.h"
 #import "CodeScanViewController.h"
 #import "HorizontalView.h"
+#import "barItemButton.h"
 
 @interface HomeViewController : UIViewController <IFlySpeechSynthesizerDelegate,IFlyRecognizerViewDelegate>
 //@property(weak, nonatomic) IBOutlet UIWebView *homeWebView;
@@ -23,4 +24,7 @@
 
 @property(weak,nonatomic) IBOutlet HorizontalView *myHorizontalView;
 
+@property(weak,nonatomic) IBOutlet UIButton *btnMic;
+@property(weak,nonatomic) IBOutlet barItemButton *btnDelete;
+//@property(weak,nonatomic) IBOutlet UIBarButtonItem *btnDeleteItem;
 @end

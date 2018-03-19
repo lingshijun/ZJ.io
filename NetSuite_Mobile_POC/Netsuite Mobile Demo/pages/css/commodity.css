@@ -1,0 +1,101 @@
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    margin-left: 4rem;
+    margin-right: -4rem;
+    font-size: 1rem;
+    top: 0; /* Height of navbar */
+    height: calc(100vh - 48pt);
+    padding-top: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.category-selected {
+    color: #4D5F79;
+}
+
+.text-color-default {
+    color: #888888;
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+/* filter,shoppingCart icon size */
+.icon_size_30 {
+    height: 30px;
+    width: 30px;
+}
+
+.icon_size_60 {
+    height: 60px;
+    width: 60px;
+}
+
+.img-commodity-size {
+    height: 150px;
+    width: 150px;
+}
+
+.img-modaldialog-size {
+    height: 80px;
+    width: 90px;
+}
+
+.item {
+    position: relative;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.notify-badge {
+    position: absolute;
+    right: 1rem;
+    top: .75rem;
+    background: red;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+    color: white;
+    padding: .25rem .5rem;
+    font-size: 14px;
+}
+
+/** don't display border when input something, for search filed.*/
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.modal-dialog {
+    right: 0;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-content {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.modal_button {
+    border-style: none;
+    background: #607799;
+    border-radius: 2rem;
+    font-family: PingFangSC-Regular;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 7rem;
+    margin: .5rem;
+    padding: .25rem;;
+}

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "iflyMSC/IFlyMSC.h"
+#import <JavaScriptCore/JavaScriptCore.h>
 
 @interface MessageViewController
-    : UIViewController <IFlySpeechSynthesizerDelegate>
-@property(nonatomic, strong) IFlySpeechSynthesizer *iFlySpeechSynthesizer;
+    : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
